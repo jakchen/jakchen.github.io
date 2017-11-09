@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "window本地搭建Jekyll "
+title:  "[教程]window本地搭建Jekyll "
 date:   2017-11-04 20:26:02 +0800
 categories: jekyll
 tags: jekyll
@@ -58,10 +58,10 @@ gem uninstall jekyll
 D:
 #然后回车
 ```
-截图如下：<br/>
-![进入D盘]({{ site.url }}/assets/img6.jpg)<br/>
+截图如下：
+![进入D盘]({{ site.url }}/assets/img6.jpg)
 要进入D盘下的其他盘，如blog文件夹，输入CD--空格--到达的路径(blog)--回车
-![卸载jekyll]({{ site.url }}/assets/img.jpg)<br/>
+![卸载jekyll]({{ site.url }}/assets/img.jpg)
 然后输入创建博客的命令：
 ```ruby
 jekyll new blog
