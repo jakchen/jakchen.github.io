@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "markdown 语法"
+title:  "markdown 简明语法"
 categories: markdown
 tags: markdown
 author: jakchen
@@ -81,3 +81,20 @@ puts markdown.to_html
 ```
 如果你想使一段话中部分文字高亮显示，来起到突出强调的作用，可以把它用 ` ` 包围起来。
 ## 5.插入表格
+```
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+```
+如下所示：
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+## 以上基本够用了，不会的就用html标签。
+markdown支持大部分的html文本编辑标签。例如换行，用``<br/>``等。<br/>
+但markdown有些标签写起来要简洁得多。<br/>
+附：[markdown支持的html标签](https://github.com/github/markup/tree/master#html-sanitization)

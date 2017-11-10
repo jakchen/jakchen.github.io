@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[教程]github for windows"
+title:  "[教程]使用github for windows"
 date:   2017-11-09 20:26:02 +0800
 categories: github
 tags: github
@@ -94,7 +94,39 @@ GitHub也提供一个粘贴箱风格的站点Gist，供软件代码库使用的W
 
 若已经有README.md，我们可以在远程仓库文件目录中点击，然后选择进行修改。
 README.md并不是随便编写的，它有特定的语法。
+参考：[markdown简明语法][3]
 
+## 五．对已有仓库修改设置
+登陆到[https://github.com/][1]，点击用户名下的``Your Profile``，进入Contributions页面
+![contributions]({{ site.url }}/assets/controtion.jpg)<br/>
+点击你要设置的repository，如ceshi，
+![ceshi3]({{ site.url }}/assets/ceshi3.jpg)<br/>
+点击右上角的Settings，可以设置仓库，比如删除仓库
+![delete]({{ site.url }}/assets/delete.jpg)<br/>
+
+## 六．GitHub上找自己要的代码，存到本地仓库
+### 1.搜索项目
+登陆到 [https://github.com/][1]，在搜索框中，输入关键字搜索
+![search]({{ site.url }}/assets/search.jpg)<br/>
+### 2.fork项目到远程仓库
+找到自己感兴趣的项目，点击fork，将别人的项目存到自己远程仓库里。
+
+![fork]({{ site.url }}/assets/fork.jpg)<br/>
+
+在Github中，开发者除了可以托管自己的项目源码外，还可以Watch（关注）、Star（加星）、Fork（复制一份）、Pull Request（提交问题或申请功能）其他开发者的项目。
+
+> fork：克隆别人的代码库到自己的项目中，可以作为子模块的形式使用，或二次开发。在开源项目中点击fork按钮，稍等一会儿，该项目便会拷贝一份到你的respositories中。
+
+### 3.clone项目到本地
+在GitHub for Windows中，将远程fork的仓库clone到本地，点击左上角"+"，进入clone，如图：
+![clone]({{ site.url }}/assets/clone2.jpg)<br/>
+> 当然，你可以在网页上直接下载项目或代码。若要将别人的项目代码存到自己的仓库中，则用上面方法。
+
+## 七．Create an organization
+建立组织，邀请成员，共同开发，共同分享。
+
+在https://github.com/上建立，点击clip_image001[12]，New organization，如图
 
  [1]:https://github.com
  [2]:https://desktop.github.com/
+ [3]:{{ site.url }}/2017/11/09/markdown-yufa/
