@@ -12,6 +12,11 @@ author: jakchen
 1.打开官方的注册界面 [https://github.com][1]，如下图：
 
 ![tu1][2]
+
+
+
+
+
 注册流程,点击 ![enter description here][3] 按钮，填写相应信息；
 
 ![tu2][4]
