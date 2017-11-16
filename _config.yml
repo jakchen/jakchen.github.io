@@ -28,8 +28,9 @@ description_footer: 本站记录着我的前端学习之路
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
-disqus_shortname: jakchen
+# 多说评论2017.6.1已经关闭
+#duoshuo_shortname: #hygblog
+disqus_shortname: #jakchen
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
