@@ -1,0 +1,220 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html 事件属性</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>html 事件属性</h1>
+  <div id="intro">
+    <p><strong>html 4.0 的新特性之一是使 html 事件触发浏览器中的行为，比方说当用户点击一个 html 元素时启动一段 javascript。以下就是可被插入 html 标签以定义事件行为的一系列属性。</strong></p>
+  </div>
+  <div>
+    <h2>窗口事件 (window events)</h2>
+    <p>仅在 body 和 frameset 元素中有效。</p>
+    <table class="dataintable">
+			<colgroup>
+				<col width="25%" />
+				<col width="15%" />
+				<col width="60%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>onload</td>
+        <td>脚本</td>
+        <td>当文档被载入时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onunload</td>
+        <td>脚本</td>
+        <td>当文档被卸下时执行脚本</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>表单元素事件 (form element events)</h2>
+    <p>仅在表单元素中有效。</p>
+    <table class="dataintable">
+			<colgroup>
+				<col width="25%" />
+				<col width="15%" />
+				<col width="60%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>onchange</td>
+        <td>脚本</td>
+        <td>当元素改变时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onsubmit</td>
+        <td>脚本</td>
+        <td>当表单被提交时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onreset</td>
+        <td>脚本</td>
+        <td>当表单被重置时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onselect</td>
+        <td>脚本</td>
+        <td>当元素被选取时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onblur</td>
+        <td>脚本</td>
+        <td>当元素失去焦点时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onfocus</td>
+        <td>脚本</td>
+        <td>当元素获得焦点时执行脚本</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>键盘事件 (keyboard events)</h2>
+    <p>在下列元素中无效：base、bdo、br、frame、frameset、head、html、iframe、meta、param、script、style 以及 title 元素。</p>
+    <table class="dataintable">
+			<colgroup>
+				<col width="25%" />
+				<col width="15%" />
+				<col width="60%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>onkeydown</td>
+        <td>脚本</td>
+        <td>当键盘被按下时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onkeypress</td>
+        <td>脚本</td>
+        <td>当键盘被按下后又松开时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onkeyup</td>
+        <td>脚本</td>
+        <td>当键盘被松开时执行脚本</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>鼠标事件 (keyboard events)</h2>
+    <p>在下列元素中无效：base、bdo、br、frame、frameset、head、html、iframe、meta、param、script、style 以及 title 元素。</p>
+    <table class="dataintable">
+			<colgroup>
+				<col width="25%" />
+				<col width="15%" />
+				<col width="60%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>onclick</td>
+        <td>脚本</td>
+        <td>当鼠标被单击时执行脚本</td>
+      </tr>
+      <tr>
+        <td>ondblclick</td>
+        <td>脚本</td>
+        <td>当鼠标被双击时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onmousedown</td>
+        <td>脚本</td>
+        <td>当鼠标按钮被按下时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onmousemove</td>
+        <td>脚本</td>
+        <td>当鼠标指针移动时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>脚本</td>
+        <td>当鼠标指针移出某元素时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>脚本</td>
+        <td>当鼠标指针悬停于某元素之上时执行脚本</td>
+      </tr>
+      <tr>
+        <td>onmouseup</td>
+        <td>脚本</td>
+        <td>当鼠标按钮被松开时执行脚本</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+
+
+</html>

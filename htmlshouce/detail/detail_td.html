@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML &lt;td&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>HTML &lt;td&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>定义表格中的一个单元格。</p>
+  </div>
+  <div>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，td 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 是不被赞成使用的。</p>
+    <p>在 XHTML 1.0 Strict DTD 中，td 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 是不被支持的。</p>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
+    <table class="dataintable">
+      <colgroup>
+				<col width="10%" />
+				<col width="15%" />
+				<col width="70%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>abbr</td>
+        <td>abbr_text</td>
+        <td>规定单元格中内容的缩写版本。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>align
+        <td><ul>
+          <li>left</li>
+          <li>right</li>
+          <li>center</li>
+          <li>justify</li>
+          <li>char</li>
+          <ul>
+        </td>
+        <td>规定单元格内容的水平排列方式。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>axis</td>
+        <td>category_names</td>
+        <td>为单元格定义一个名字。有关 axis 属性的详细信息。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>bgcolor</td>
+        <td><ul>
+            <li>rgb(x,x,x)</li>
+            <li>#xxxxxx</li>
+            <li>colorname</li>
+          </ul></td>
+        <td>规定单元格的背景颜色。不赞成使用。请使用样式取而代之。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>char</td>
+        <td>character</td>
+        <td>规定根据哪个字符来进行文本对齐。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！ <br />
+          <a href="#char_charoff">有关 char 和 charoff 属性的详细信息</a>。</td>
+        <td>STF</td>
+      <tr>
+        <td>charoff</td>
+        <td> pixels
+          % </td>
+        <td>规定第一个对齐字符的偏移量。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！ <br />
+          <a href="#char_charoff">有关 char 和 charoff 属性的详细信息</a>。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>colspan</td>
+        <td>number</td>
+        <td>规定此单元格可横跨的列数。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>headers</td>
+        <td>header_cells'_id</td>
+        <td>一个空格分隔的单元格 ID 列表，这些 ID 可为单元格提供表头的信息。此属性允许纯文本的浏览器为某个给定的单元格呈现表头信息。<a href="#headers">有关 headers 属性的详细信息</a>。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td>pixels</td>
+        <td>规定表格单元格的高度。不赞成使用。请使用样式取而代之。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>nowrap</td>
+        <td>nowrap</td>
+        <td>是否在此单元格中禁用或启用正文的文本环绕。不赞成使用。请使用样式取而代之。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>rowspan</td>
+        <td>number</td>
+        <td>规定此单元格可横跨的行数。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>scope</td>
+        <td><ul>
+            <li>col</li>
+            <li>colgroup</li>
+            <li>row</li>
+            <li>rowgroup</li>
+          </ul></td>
+        <td>规定此单元格是否为以下部分提供表头信息：包含此单元格的行 row) 的其余部分，包含此单元格的列 (col) 的其余部分，包含此单元格的行组 (rowgroup) 的其余部分，包含此单元格的列组 (colgroup) 的其余部分。 <br />
+          <a href="#scope">有关 scope 属性的详细信息</a>。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>valign</td>
+        <td><ul>
+            <li>top</li>
+            <li>middle</li>
+            <li>bottom</li>
+            <li>baseline</li>
+          </ul></td>
+        <td>规定单元格内容的垂直排列方式。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><ul>
+            <li>pixels</li>
+            <li>%</li>
+          </ul></td>
+        <td>规定表格单元格的宽度。不赞成使用。请使用样式取而代之。</td>
+        <td>TF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2><a id="char_charoff">char 和 charoff 属性</a></h2>
+    <p>即使是最简单的文字处理器也允许在表格中排列十进制数字中的点。直到 HTML 4.0 标准的出现，网页设计语言一直不能充分满足这方面的要求。</p>
+    <p>现在，可以使用 char 属性，来指定表格行内单元格中的一个字母，这个字母就是对齐的中心线。不需要为 char 指定值。如果你没有指定的话，默认的字符是基于语言：例如，在英语中是一个句点，而在法语中是一个逗号。如果把一个单字符指定为 char 属性的值，则可以指定不同的对齐字符。</p>
+    <p>使用 charoff 属性和一个整数值可指定每行对齐字符第一次出现的偏移量。如果一行中不包括对齐字符，应该水平平移到对齐位置的最后。</p>
+    <p>char 和 charoff 属性在 HTML 4 和 XHTML 中是新出现的属性，还没有得到任何一个流行浏览器的支持。</p>
+  </div>
+  <div>
+    <h2><a id="headers">headers 属性</a></h2>
+    <p>headers 属性会将表格中的一个表头单元格和一个数据单元格联系起来。</p>
+    <p>这个属性的值是引号包括的一列名称，这些名称是用 id 属性定义的不同表头单元格的名称。</p>
+    <p>headers 属性对非可视化的浏览器，也就是那些在显示出相关数据单元格内容之前就显示表头单元格内容的浏览器非常有用。</p>
+  </div>
+  <div>
+    <h2><a id="scope">scope 属性</a></h2>
+    <p>使用 scope 属性，可以将数据单元格与表头单元格联系起来。</p>
+    <p>通过属性值 row，表头行包括的所有表格都将和表头单元格联系起来。指定 col，会将当前列的所有单元格和表头单元格绑定起来。</p>
+    <p>使用 rowgroup 和 colgroup 会将单元格的行组（由 &lt;thead&gt;、&lt;tbody&gt; 或 &lt;tfoot&gt; 标签定义）或列组中的所有单元格和表头单元格绑定起来（由 &lt;col&gt; 或 &lt;colgroup&gt; 标签定义）。</p>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>id, class, title, style, dir, lang, xml:lang</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+  <div>
+    <h2>事件属性</h2>
+    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
+onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
+
+</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+</html>

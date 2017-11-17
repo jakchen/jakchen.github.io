@@ -1,0 +1,148 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html &lt;frame&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>html &lt;frame&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>在 &lt;frameset&gt; 中定义一个框架。</p>
+  </div>
+  <div>
+    <h2>html 与 xhtml 之间的差异</h2>
+    <p>在 html 中，&lt;frame&gt; 标签没有结束标签。</p>
+    <p>在 xhtml 中，&lt;frame&gt; 标签必须被正确地关闭。</p>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>如果您希望验证某个包含框架的页面，请确保 dtd 被设置为 &quot;frameset dtd&quot;。</p>
+    <p class="important"><span>重要事项：</span>您不能与 &lt;frameset&gt;&lt;/frameset&gt; 标签一起使用 &lt;body&gt;&lt;/body&gt; 标签。不过，如果您需要为不支持框架的浏览器添加一个 &lt;noframes&gt; 标签，请务必将此标签放置在 &lt;body&gt;&lt;/body&gt; 标签中！</p>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <table class="dataintable">
+			<colgroup>
+				<col width="15%" />
+				<col width="15%" />
+				<col width="65%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>dtd</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>frameborder</td>
+        <td><ul>
+            <li>0</li>
+            <li>1</li>
+          </ul></td>
+        <td>规定是否显示框架周围的边框。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>longdesc</td>
+        <td>url</td>
+        <td>描述此框架内容的长的 url。可为那些不支持框架的浏览器使用此属性。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>marginheight</td>
+        <td>pixels</td>
+        <td>定义框架中的顶部和底部边距。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>marginwidth</td>
+        <td>pixels</td>
+        <td>定义框架中的左侧和右侧边距。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>frame_name</td>
+        <td>为框架定义唯一的名称（以便在脚本中使用）。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>noresize</td>
+        <td>noresize</td>
+        <td>当设置为 noresize 时，用户无法对框架调整尺寸。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>scrolling</td>
+        <td><ul>
+            <li>yes</li>
+            <li>no</li>
+            <li>auto</li>
+          </ul></td>
+        <td>确定滚动条的行为。</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>src</td>
+        <td>url</td>
+        <td>定义显示在框架中的文件的 url。</td>
+        <td>f</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>id, class, title, style</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+
+
+</html>

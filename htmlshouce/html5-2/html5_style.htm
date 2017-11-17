@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML 5 <style> 标签 </title>
+</head>
+<body>
+<div id="maincontent">
+<h1>HTML 5 &lt;style&gt; 标签</h1>
+<div>
+<h2>定义和用法</h2>
+<p>&lt;style&gt; 标签定义文档中的样式。</p>
+<p>如果需要在文档中引用样式表，应该定义外部的样式表，然后使用 &lt;link&gt; 来连接这个样式表。</p></div>
+<div>
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>scoped 属性是 HTML 5 中的新属性，它允许我们为文档的指定部分定义样式，而不是整个文档。</p></div>
+<div>
+<h2>提示和注释：</h2>
+<P class="tip"><SPAN>提示：</SPAN>如需学习更多有关样式表的内容，请访问我们的 <a href="http://t.mb5u.com/css/index.htm">CSS 
+教程</a>。</p>
+<P class="tip"><SPAN>提示：</SPAN>在 HTML 5 中，所有元素都不支持 <EM>style 
+属性</EM>，如需为一个元素添加样式，请在 style 元素中使用 scoped 属性。</p>
+<P class="note"><SPAN>注释：</SPAN>如果没有定义 scoped 属性，则 &lt;style&gt; 元素必须是 head 
+元素的子元素，或者是（属于 head 元素的子元素的） noscript 元素的子元素。</p></div>
+<div>
+<h2>例子</h2><pre>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+    h1 {color: blue}
+    h2 {color: red}
+    &lt;/style&gt;
+&lt;/head&gt;
+</pre></div>
+<div>
+<h2>属性</h2>
+<table class="dataintable">
+  <tbody>
+  <tr>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
+    <th>4</th>
+    <th>5</th></tr>
+  <tr>
+    <td>type</td>
+    <td>text/css</td>
+    <td>定义内容类型。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>media</td>
+    <td>
+      <ul>
+        <li>screen 
+        <li>tty 
+        <li>tv 
+        <li>projection 
+        <li>handheld 
+        <li>print 
+        <li>braille 
+        <li>aural 
+        <li>all </li></ul></td>
+    <td>样式信息的目标媒介。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>scoped</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>如果设置为 true，则样式仅仅应用到 style 元素的父元素及其子元素。</td>
+    <td>4</td>
+    <td>5</td></tr></tbody></table>
+<h3>标准属性</h3><pre>class, contenteditable, contextmenu, dir, draggable, id, irrelevant, 
+lang, ref, registrationmark, tabindex, template, title</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_standardattributes.htm">HTML 5 中标准属性</a>。</p>
+<h3>事件属性</h3><pre>onabort, onbeforeunload, onblur, onchange, onclick, oncontextmenu, 
+ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, 
+ondragstart, ondrop, onerror, onfocus, onkeydown, onkeypress, onkeyup, 
+onload, onmessage, onmousedown, onmousemove, onmouseover, onmouseout, 
+onmouseup, onmousewheel, onresize, onscroll, onselect, onsubmit, onunload
+</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_eventattributes.htm">HTML 5 
+中事件属性</a>。</p></div>
+<div class="example">
+<h2>TIY 实例</h2>
+<DL>
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_style">HTML中的样式</a> 
+  <DD>本例演示如何使用添加到 &lt;head&gt; 部分的样式信息对 HTML 进行格式化。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_linknoline">没有下划线的链接</a> 
+  <DD>本例演示如何使用样式属性做一个没有下划线的链接。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_link">链接到一个外部样式表</a> 
+  <DD>本例演示如何&lt;link&gt;标签链接到一个外部样式表。 </DD></DL></div></div>
+
+</body></html>

@@ -1,0 +1,850 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html_xhtml标签参考手册</title>
+</head>
+<body>
+<h1>html_xhtml标签参考手册</h1>
+<ul>
+  <li>nn：显示所支持标签的 netscape 的最早版本。</li>
+  <li>ie：显示所支持标签的 internet explorer 的最早版本。</li>
+  <li>dtd：显示在哪一种xhtml 1.0 dtd中，标签是被允许的。s=strict, t=transitional, f=frameset.</li>
+</ul>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">基本的标签</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_doctype.html">&lt;!doctype&gt;</a>&nbsp;</td>
+      <td>定义文档类型。</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_html.html">&lt;html&gt;</a></td>
+      <td>定义 html 文档。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_body.html">&lt;body&gt;</a></td>
+      <td>定义 body 元素。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_hn.html">&lt;h1&gt; to &lt;h6&gt;</a></td>
+      <td>定义标题 1 到标题 6。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_p.html">&lt;p&gt;</a></td>
+      <td>定义段落。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_br.html">&lt;br&gt;</a></td>
+      <td>插入一个换行。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_hr.html">&lt;hr&gt;</a></td>
+      <td>定义水平线。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_comment.html">&lt;!--...--&gt;</a></td>
+      <td>定义注释。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">字符格式化</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<tr>
+      <td><a href="detail_phrase_elements.html">&lt;em&gt;</a></td>
+      <td>定义强调文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;strong&gt;</a></td>
+      <td>定义语气更为强烈的强调文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_sup.html">&lt;sup&gt;</a></td>
+      <td>定义上标文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_sup.html">&lt;sub&gt;</a></td>
+      <td>定义下标文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_bdo.html">&lt;bdo&gt;</a></td>
+      <td>定义文本显示的方向。</td>
+      <td>6.2</td>
+      <td>5.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_font_style.html">&lt;b&gt;</a></td>
+      <td><em>不赞成使用！</em>定义粗体文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_font.html">&lt;font&gt;</a></td>
+      <td><em>不赞成使用！</em>定义文字的字体、尺寸和颜色</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_font_style.html">&lt;i&gt;</a></td>
+      <td><em>不赞成使用！</em>定义斜体文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    
+    <tr>
+      <td><a href="detail_font_style.html">&lt;big&gt;</a></td>
+      <td><em>不赞成使用！</em>定义大号字体文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_font_style.html">&lt;small&gt;</a></td>
+      <td><em>不赞成使用！</em>定义小号字体文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_u.html">&lt;u&gt;</a></td>
+      <td><em>不赞成使用！</em>定义下划线文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">输出</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_pre.html">&lt;pre&gt;</a></td>
+      <td>定义预格式文本</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;code&gt;</a></td>
+      <td>定义计算机代码文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_font_style.html">&lt;tt&gt;</a></td>
+      <td>定义打字机文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;kbd&gt;</a></td>
+      <td>定义键盘文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;var&gt;</a></td>
+      <td>定义变量。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;dfn&gt;</a></td>
+      <td>定义定义项目。</td>
+      <td>&nbsp;</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;samp&gt;</a></td>
+      <td>定义样本文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td>&lt;xmp&gt;</td>
+      <td><em>不赞成使用。</em>定义预格式文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">块级</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_acronym.html">&lt;acronym&gt;</a></td>
+      <td>定义只取首字母的缩写。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_abbr.html">&lt;abbr&gt;</a></td>
+      <td>定义缩写。</td>
+      <td>6.2</td>
+      <td>&nbsp;</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_address.html">&lt;address&gt;</a></td>
+      <td>定义地址元素。</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_blockquote.html">&lt;blockquote&gt;</a></td>
+      <td>定义块引用。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_q.html">&lt;q&gt;</a></td>
+      <td>定义短的引用。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_phrase_elements.html">&lt;cite&gt;</a></td>
+      <td>定义引用(citation)。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_ins.html">&lt;ins&gt;</a></td>
+      <td>定义被插入文本。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_del.html">&lt;del&gt;</a></td>
+      <td>定义被删除文本.</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_center.html">&lt;center&gt;</a></td>
+      <td><em>不赞成使用！</em>定义居中字体。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_strike.html">&lt;s&gt;</a></td>
+      <td><em>不赞成使用！</em>定义加删除线的文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_strike.html">&lt;strike&gt;</a></td>
+      <td><em>不赞成使用！</em>定义加删除线的文本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">链接</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_a.html">&lt;a&gt;</a></td>
+      <td>定义锚。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_link.html">&lt;link&gt;</a></td>
+      <td>定义资源引用(resource reference)。</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">框架</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_frame.html">&lt;frame&gt;</a></td>
+      <td>定义框架的子窗口</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td><a href="detail_frameset.html">&lt;frameset&gt;</a></td>
+      <td>定义框架结构</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td><a href="detail_noframes.html">&lt;noframes&gt;</a></td>
+      <td>定义无框架的节</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_iframe.html">&lt;iframe&gt;</a></td>
+      <td>定义内联框架</td>
+      <td>6.0</td>
+      <td>4.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">输入</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_form.html">&lt;form&gt;</a></td>
+      <td>定义表单。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_input.html">&lt;input&gt;</a></td>
+      <td>定义输入域。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_textarea.html">&lt;textarea&gt;</a></td>
+      <td>定义文本输入区。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_button.html">&lt;button&gt;</a></td>
+      <td>定义按钮。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_select.html">&lt;select&gt;</a></td>
+      <td>定义下拉式菜单。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_optgroup.html">&lt;optgroup&gt;</a></td>
+      <td>定义选项分组。</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_option.html">&lt;option&gt;</a></td>
+      <td>定义下拉列表中的可选项。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_label.html">&lt;label&gt;</a></td>
+      <td>为表单元素创建标记。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_fieldset.html">&lt;fieldset&gt;</a></td>
+      <td>将表单内的相关元素分组。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_legend.html">&lt;legend&gt;</a></td>
+      <td>定义框架结构的标题。</td>
+      <td>6.2</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td>&lt;isindex&gt;</td>
+      <td><em>不赞成使用。</em>定义单行的输入域</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">列表</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_ul.html">&lt;ul&gt;</a></td>
+      <td>定义无序列表。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_ol.html">&lt;ol&gt;</a></td>
+      <td>定义有序列表。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_li.html">&lt;li&gt;</a></td>
+      <td>定义列表项目。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_dl.html">&lt;dl&gt;</a></td>
+      <td>定义定义列表。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_dt.html">&lt;dt&gt;</a></td>
+      <td>定义定义项目。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_dd.html">&lt;dd&gt;</a></td>
+      <td>定义定义描述。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_dir.html">&lt;dir&gt;</a></td>
+      <td><em>不赞成使用。</em>定义目录列表。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_menu.html">&lt;menu&gt;</a></td>
+      <td><em>不赞成使用。</em>定义菜单列表。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">图像</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_img.html">&lt;img&gt;</a></td>
+      <td>定义图像。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_map.html">&lt;map&gt;</a></td>
+      <td>定义图像映射。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_area.html">&lt;area&gt;</a></td>
+      <td>定义图像地图内部的区域。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">表格</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_table.html">&lt;table&gt;</a></td>
+      <td>定义表格</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_caption.html">&lt;caption&gt;</a></td>
+      <td>定义表格标题</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_th.html">&lt;th&gt;</a></td>
+      <td>定义表格页眉</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_tr.html">&lt;tr&gt;</a></td>
+      <td>定义表格的行</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_td.html">&lt;td&gt;</a></td>
+      <td>定义表格单元</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_thead.html">&lt;thead&gt;</a></td>
+      <td>定义表格的页眉</td>
+      <td>&nbsp;</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_tbody.html">&lt;tbody&gt;</a></td>
+      <td>定义表格的主体</td>
+      <td>&nbsp;</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_tfoot.html">&lt;tfoot&gt;</a></td>
+      <td>定义表格的页脚</td>
+      <td>&nbsp;</td>
+      <td>4.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_col.html">&lt;col&gt;</a></td>
+      <td>定义用于表格列的属性</td>
+      <td>&nbsp;</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_colgroup.html">&lt;colgroup&gt;</a></td>
+      <td>定义表格列的组</td>
+      <td>&nbsp;</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">样式</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_style.html">&lt;style&gt;</a></td>
+      <td>定义样式定义</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_div.html">&lt;div&gt;</a></td>
+      <td>定义文档中的节</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_span.html">&lt;span&gt;</a></td>
+      <td>定义文档中的节</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">元信息</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_head.html">&lt;head&gt;</a></td>
+      <td>定义关于文档的信息</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_title.html">&lt;title&gt;</a></td>
+      <td>定义文档的标题</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_meta.html">&lt;meta&gt;</a></td>
+      <td>定义元信息</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_base.html">&lt;base&gt;</a></td>
+      <td>定义某个页面当中的所有链接的基准链接</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_basefont.html">&lt;basefont&gt;</a></td>
+      <td><em>不赞成使用。</em>定义基准字体</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+<table class="dataintable">
+  <thead>
+    <tr>
+      <th style="width:30%">programming</th>
+      <th style="width:53%">描述</th>
+      <th style="width:5%">nn</th>
+      <th style="width:5%">ie</th>
+      <th style="width:7%">dtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="detail_script.html">&lt;script&gt;</a></td>
+      <td>定义一段脚本。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_noscript.html">&lt;noscript&gt;</a></td>
+      <td>定义 noscript 部分。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_object.html">&lt;object&gt;</a></td>
+      <td>定义嵌入的对象。</td>
+      <td>&nbsp;</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_param.html">&lt;param&gt;</a></td>
+      <td>为对象定义参数。</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>stf</td>
+    </tr>
+    <tr>
+      <td><a href="detail_applet.html">&lt;applet&gt;</a></td>
+      <td><em>不赞成使用。</em>定义 applet。</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>tf</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="copyright"></p></body>
+
+
+</html>

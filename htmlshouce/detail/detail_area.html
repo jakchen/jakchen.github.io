@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML &lt;area&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>HTML &lt;area&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>定义图像映射中的某个区域。</p>
+  </div>
+  <div>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 中，&lt;area&gt; 没有结束标签。</p>
+    <p>在 XHTML 中，&lt;area&gt; 必须被正确地关闭。</p>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p>此元素永远被嵌套在 &lt;map&gt; 标签内部。</p>
+    <p class="note"><span>注释：</span>&lt;img&gt; 中的 <em>usemap</em> 属性可引用 &lt;map&gt; 中的 <em>id</em> 或 <em>name</em> 属性（由浏览器决定），所以我们需要同时向 &lt;map&gt; 添加 id 和 name 两个属性。</p>
+  </div>
+  <div>
+    <h2>必需的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
+    <table class="dataintable">
+      <colgroup>
+				<col width="10%" />
+				<col width="15%" />
+				<col width="70%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>alt</td>
+        <td>text</td>
+        <td>定义此区域的替换文本。</td>
+        <td>STF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <table class="dataintable">
+      <colgroup>
+				<col width="10%" />
+				<col width="15%" />
+				<col width="70%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td><a href="detail_area_prop_coords.html" title="HTML &lt;area&gt; 标签的 coords 属性">coords</a></td>
+        <td>坐标值</td>
+        <td>定义可点击区域（对鼠标敏感的区域）的坐标。 <br />
+          <a href="detail_area_prop_coords.html" title="HTML &lt;area&gt; 标签的 coords 属性">有关 coords 属性的详细信息</a>。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>href</td>
+        <td>URL</td>
+        <td>定义此区域的目标 URL。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>nohref</td>
+        <td><ul>
+            <li>true</li>
+            <li>false</li>
+          </ul></td>
+        <td>从图像映射排除某个区域。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>shape</td>
+        <td><ul>
+            <li>rect</li>
+            <li>rectangle</li>
+            <li>circ</li>
+            <li>circle</li>
+            <li>poly</li>
+            <li>polygon</li>
+          </ul></td>
+        <td>定义区域的形状。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td>target
+        <td><ul>
+            <li>_blank</li>
+            <li>_parent</li>
+            <li>_self</li>
+            <li>_top</li>
+          </ul></td>
+        <td>在何处打开目标 URL:
+          <ul>
+            <li>_blank - 在一个新的未命名的窗口载入文档</li>
+            <li>_self - 在相同的框架或窗口中载入目标文档</li>
+            <li>_parent - 把文档载入父窗口或包含了超链接引用的框架的框架集</li>
+            <li>_top - 把文档载入包含该超链接的窗口,取代任何当前正在窗口中显示的框架</li>
+          </ul></td>
+        <td>TF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>id, class, title, style, dir, lang, xml:lang, tabindex, accesskey</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+  <div>
+    <h2>事件属性</h2>
+    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, onmousemove, 
+onmouseout, onkeypress, onkeydown, onkeyup, onfocus, onblur 
+</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html &lt;!doctype&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>html &lt;!doctype&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>&lt;!doctype&gt; 声明位于文档中的最前面的位置，处于 &lt;html&gt; 标签之前。此标签可告知浏览器文档使用哪种 html 或 xhtml 规范。</p>
+    <p>该标签可声明三种 dtd 类型，分别表示严格版本、过渡版本以及基于框架的 html 文档。</p>
+    <p>以下面这个 &lt;!doctype&gt; 标签为例：</p>
+    <pre>&lt;!doctype html
+	public &quot;-//w3c//dtd xhtml 1.0 strict//en&quot; 
+	&quot;http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd&quot;&gt;</pre>
+    <p>在上面的声明中，声明了文档的根元素是 html，它在公共标识符被定义为 &quot;-//w3c//dtd xhtml 1.0 strict//en&quot; 的 dtd 中进行了定义。浏览器将明白如何寻找匹配此公共标识符的 dtd。如果找不到，浏览器将使用公共标识符后面的 url 作为寻找 dtd 的位置。</p>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>&lt;!doctype&gt; 标签没有结束标签！</p>
+  </div>
+  <div>
+    <h2>html</h2>
+    <p>html 4.01 规定了三种文档类型：strict、transitional 以及 frameset。</p>
+    <h3>html strict dtd</h3>
+    <p>如果您需要干净的标记，免于表现层的混乱，请使用此类型。请与层叠样式表（css）配合使用：</p>
+    <pre>&lt;!doctype html public &quot;-//w3c//dtd html 4.01//en&quot; &quot;
+	http://www.w3.org/tr/html4/strict.dtd&quot;&gt;</pre>
+    <h3>html transitional dtd</h3>
+    <p>transitional dtd 可包含 w3c 所期望移入样式表的呈现属性和元素。如果您的读者使用了不支持层叠样式表（css）的浏览器以至于您不得不使用 html 的呈现特性时，请使用此类型：</p>
+    <pre>&lt;!doctype html public &quot;-//w3c//dtd html 4.01 transitional//en&quot; &quot;
+	http://www.w3.org/tr/html4/loose.dtd&quot;&gt;</pre>
+    <h3>frameset dtd</h3>
+    <p>frameset dtd 应当被用于带有框架的文档。除 frameset 元素取代了 body 元素之外，frameset dtd 等同于 transitional dtd：</p>
+    <pre>&lt;!doctype html public &quot;-//w3c//dtd html 4.01 frameset//en&quot; &quot;
+	http://www.w3.org/tr/html4/frameset.dtd&quot;&gt;</pre>
+  </div>
+  <div>
+    <h2>xhtml</h2>
+    <p>xhtml 1.0 规定了三种 xml 文档类型：strict、transitional 以及 frameset。</p>
+    <h3>xhtml strict dtd</h3>
+    <p>如果您需要干净的标记，免于表现层的混乱，请使用此类型。请与层叠样式表（css）配合使用：</p>
+    <pre>
+	&lt;!doctype html
+	public &quot;-//w3c//dtd xhtml 1.0 strict//en&quot; 
+	&quot;http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd&quot;&gt;</pre>
+    <h3>xhtml transitional dtd</h3>
+    <p>transitional dtd 可包含 w3c 所期望移入样式表的呈现属性和元素。如果您的读者使用了不支持层叠样式表（css）的浏览器以至于您不得不使用 xhtml 的呈现特性时，请使用此类型：</p>
+    <pre>&lt;!doctype html
+	public &quot;-//w3c//dtd xhtml 1.0 transitional//en&quot;
+	&quot;http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd&quot;&gt;</pre>
+    <h3>xhtml frameset dtd</h3>
+    <p>当您希望使用框架时，请使用此 dtd！</p>
+    <pre>
+	&lt;!doctype html
+	public &quot;-//w3c//dtd xhtml 1.0 frameset//en&quot;
+	&quot;http://www.w3.org/tr/xhtml1/dtd/xhtml1-frameset.dtd&quot;&gt;</pre>
+    <p>如需检查你是否编写了带有正确 dtd 的合法 xhtml 文档，您可以把您的 xhtml 页面链接到一个 xhtml 验证器。</p>
+  </div>
+  <div>
+    <p>属性：无</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+
+
+</html>

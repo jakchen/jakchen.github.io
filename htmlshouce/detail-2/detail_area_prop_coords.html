@@ -1,0 +1,78 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html &lt;area&gt; 标签的 coords 属性</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>html &lt;area&gt; 标签的 coords 属性</h1>
+  <div>
+    <h2>coords 属性</h2>
+    <p>&lt;area&gt; 标签的 coords 属性定义了客户端图像映射中对鼠标敏感的区域的坐标。坐标的数字及其含义取决于 shape 属性中决定的区域形状。可以将客户端图像映射中的超链接区域定义为矩形、圆形或多边形等。</p>
+    <p>下面列出了每种形状的适当值：</p>
+    <h3>圆形：shape=&quot;circle&quot;，coords=&quot;x,y,z&quot;</h3>
+    <p>这里的 x 和 y 定义了圆心的位置（&quot;0,0&quot; 是图像左上角的坐标），r 是以像素为单位的圆形半径。</p>
+    <h3>多边形：shape=&quot;polygon&quot;，coords=&quot;x1,y1,x2,y2,x3,y3,...&quot;</h3>
+    <p>每一对 &quot;x,y&quot; 坐标都定义了多边形的一个顶点（&quot;0,0&quot; 是图像左上角的坐标）。定义三角形至少需要三组坐标；高纬多边形则需要更多数量的顶点。</p>
+    <p>多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。</p>
+    <h3>矩形：shape=&quot;rectangle&quot;，coords=&quot;x1,y1,x2,y2&quot;</h3>
+    <p>第一个坐标是矩形的一个角的顶点坐标，另一对坐标是对角的顶点坐标，&quot;0,0&quot; 是图像左上角的坐标。请注意，定义举行实际上是定义带有四个顶点的多边形的一种简化方法。</p>
+    <p>例如，下面的 xhtml 片段在一个 100x100 像素图像的右下方四分之一处，定义了一个对鼠标敏感的区域，并在图像的正中间定义了一个圆形区域。</p>
+    <pre>
+&lt;map name=&quot;map&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;75,75,99,99&quot; nohref=&quot;nohref&quot;&gt;
+  &lt;area shape=&quot;circ&quot; coords=&quot;50,50,25&quot; nohref=&quot;nohref&quot;&gt;
+&lt;/map&gt;
+</pre>
+  </div>
+  <div>
+    <h2>提示和注释</h2>
+    <p class="note"><span>注释：</span>如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。浏览器会忽略超过图像边界范围之外的坐标。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+
+
+</html>

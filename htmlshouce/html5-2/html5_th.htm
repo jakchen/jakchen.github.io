@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML 5 <th> 标签</title>
+</head>
+<body>
+<div id="maincontent">
+<h1>HTML 5 &lt;th&gt; 标签</h1>
+<div>
+<h2>定义和用法</h2>
+<p>&lt;th&gt; 标签定义表格内的表头单元格。此 th 元素内部的文本通常会呈现为粗体。</p></div>
+<div>
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>在 HTML 4.01 中，th 元素的 "bgcolor"、"height"、"width" 以及 "nowrap" 属性是不被赞成使用的。</p>
+<p>在 HTML 5 中，仅仅支持 "colspan" 、 "rowspan" 以及 "scope" 属性。</p></div>
+<div>
+<h2>例子</h2><pre>&lt;table&gt;
+  &lt;tr&gt;
+    <CODE>&lt;th&gt;</CODE>Header 1<CODE>&lt;/th&gt;</CODE>
+    <CODE>&lt;th&gt;</CODE>Header 2<CODE>&lt;/th&gt;</CODE>
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;Cell A&lt;/td&gt;
+    &lt;td&gt;Cell B&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre></div>
+<div>
+<h2>属性</h2>
+<table class="dataintable">
+  <tbody>
+  <tr>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
+    <th>4</th>
+    <th>5</th></tr>
+  <tr>
+    <td>abbr</td>
+    <td>abbr_text</td>
+    <td>规定单元格中内容的缩写版本。不支持。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>align</td>
+    <td>
+      <ul>
+        <li>left 
+        <li>right 
+        <li>center 
+        <li>justify 
+        <li>char </li></ul></td>
+    <td>规定单元格内容的水平排列方式。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>axis</td>
+    <td>category_names</td>
+    <td>为单元格定义一个名字。不支持。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>bgcolor</td>
+    <td>
+      <ul>
+        <li>rgb(x,x,x) 
+        <li>#xxxxxx 
+        <li>colorname </li></ul></td>
+    <td>规定单元格的背景颜色。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>char</td>
+    <td>character</td>
+    <td>规定根据哪个字符来进行文本对齐。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>charoff</td>
+    <td>
+      <ul>
+        <li>pixels 
+        <li>% </li></ul></td>
+    <td>规定第一个对齐字符的偏移量。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>colspan</td>
+    <td>number</td>
+    <td>规定此单元格可横跨的列数。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>headers</td>
+    <td>header_cells'_id</td>
+    <td>空格分隔的单元格 ID 列表。不支持。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>height</td>
+    <td>pixels</td>
+    <td>规定表格单元格的高度。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>nowrap</td>
+    <td>nowrap</td>
+    <td>是否禁用或启用单元格中的文本环绕。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>rowspan</td>
+    <td>number</td>
+    <td>规定此单元格可横跨的行数。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>scope</td>
+    <td>
+      <ul>
+        <li>col 
+        <li>colgroup 
+        <li>row 
+        <li>rowgroup </li></ul></td>
+    <td>规定此单元格是否为以下部分提供表头信息：包含此单元格的行 row) 的其余部分，包含此单元格的列 (col) 的其余部分，包含此单元格的行组 
+      (rowgroup) 的其余部分，包含此单元格的列组 (colgroup) 的其余部分。不支持。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>valign</td>
+    <td>
+      <ul>
+        <li>top 
+        <li>middle 
+        <li>bottom 
+        <li>baseline </li></ul></td>
+    <td>规定单元格内容的垂直排列方式。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>width</td>
+    <td>
+      <ul>
+        <li>pixels 
+        <li>% </li></ul></td>
+    <td>规定表格单元格的宽度。不支持。请使用 CSS 代替。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr></tbody></table>
+<h3>标准属性</h3><pre>class, contenteditable, contextmenu, dir, draggable, id, irrelevant, 
+lang, ref, registrationmark, tabindex, template, title</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_standardattributes.htm">HTML 5 中标准属性</a>。</p>
+<h3>事件属性</h3><pre>onabort, onbeforeunload, onblur, onchange, onclick, oncontextmenu, 
+ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, 
+ondragstart, ondrop, onerror, onfocus, onkeydown, onkeypress, onkeyup, 
+onload, onmessage, onmousedown, onmousemove, onmouseover, onmouseout, 
+onmouseup, onmousewheel, onresize, onscroll, onselect, onsubmit, onunload
+</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_eventattributes.htm">HTML 5 
+中事件属性</a>。</p></div>
+<div class="example">
+<h2>TIY 实例</h2>
+<DL>
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_tables">表格</a> 
+  <DD>这个例子演示如何在 HTML 文档中创建表格。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_table_headers">表格中的标题(Headings)</a> 
+  <DD>本例演示如何显示表格标题。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_table_nbsp">空单元格</a> 
+  <DD>本例展示如何使用 "&amp;nbsp;" 处理没有内容的单元格。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_tables3">带有标题的表格</a> 
+  <DD>本例演示一个带标题 (caption) 的表格 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_table_span">跨行或跨列的表格单元格</a> 
+  <DD>本例演示如何定义跨行或跨列的表格单元格。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_table_elements">表格内的标签</a> 
+  <DD>本例演示如何在不同的元素内显示元素。 </DD></DL></div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML 5 <input> 标签</title>
+</head>
+<body>
+<div id="maincontent">
+<h1>HTML 5 &lt;input&gt; 标签</h1>
+<div>
+<h2>定义和用法</h2>
+<p>&lt;input&gt; 标签定义输入字段，用户可在其中输入数据。</p></div>
+<div>
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>在 HTML 5 中，该元素有很多新属性，同时不再支持 HTML 4.01 中的一些属性。</p>
+<p>在 HTML 5 中，type 属性有很多新的值。</p></div>
+<div>
+<h2>例子</h2>
+<P class="note"><SPAN>注释：</SPAN>input 元素是空的，仅包含属性。</p>
+<P class="tip"><SPAN>提示：</SPAN>请使用 label 元素为表单控件定义标注。</p></div>
+<div>
+<h2>属性</h2>
+<table class="dataintable">
+  <tbody>
+  <tr>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
+    <th>4</th>
+    <th>5</th></tr>
+  <tr>
+    <td>accept</td>
+    <td><I>list_of_mime_types</I></td>
+    <td>一个逗号分隔的 MIME 类型列表，指示文件传输的 MIME 类型。注释：仅可与 type="file" 配合使用。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>align</td>
+    <td>
+      <ul>
+        <li>left 
+        <li>right 
+        <li>top 
+        <li>texttop 
+        <li>middle 
+        <li>absmiddle 
+        <li>baseline 
+        <li>bottom 
+        <li>absbottom </li></ul></td>
+    <td>
+      <p>定义图像之后的文本对齐方式。</p>
+      <p>不支持，请使用 CSS 代替。</p></td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>alt</td>
+    <td><I>text</I></td>
+    <td>
+      <p>定义图像的替代文本。</p>
+      <p>注释：仅可与 type="image" 配合使用。</p></td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>autocomplete</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>autofocus</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>
+      <p>当页面加载时，使输入字段获得焦点。</p>
+      <p>注释：type="hidden" 时，无法使用。</p></td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>checked</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>
+      <p>指示此 input 元素首次加载时应当被选中。</p>
+      <p>注释：请与 type="checkbox" 及 type="radio" 配合使用。</p></td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>disabled</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>
+      <p>当 input 元素首次加载时禁用此元素，这样用户就无法在其中写文本，或选定它。</p>
+      <p>注释：不能与 type="hidden" 一同使用。</p></td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>form</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>定义输入字段属于一个或多个表单。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>inputmode</td>
+    <td><I>inputmode</I></td>
+    <td>定义预期的输入类型。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>list</td>
+    <td><I>id of a datalist</I></td>
+    <td>引用 datalist 元素。如果定义，则一个下拉列表可用于向输入字段插入值。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>max</td>
+    <td><I>number</I></td>
+    <td>输入字段的最大值。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>maxlength</td>
+    <td><I>number</I></td>
+    <td>定义文本域中所允许的字符最大数目。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>min</td>
+    <td><I>number</I></td>
+    <td>输入字段的最小值。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>name</td>
+    <td><I>field_name</I></td>
+    <td>为 input 元素定义唯一的名称。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>pattern</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>readonly</td>
+    <td>readonly</td>
+    <td>指示是否可修改该字段的值。</td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>replace</td>
+    <td><I>text</I></td>
+    <td>定义当表单提交时如何处理该输入字段。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>required</td>
+    <td>
+      <ul>
+        <li>true 
+        <li>false </li></ul></td>
+    <td>
+      <p>定义输入字段的值是否是必需的。</p>
+      <p>当使用下列类型时无法使用：hidden, image, button, submit, reset</p></td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>size</td>
+    <td>number_of_char</td>
+    <td>定义 input 元素的大小。不再支持。</td>
+    <td>4</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>src</td>
+    <td>URL</td>
+    <td>
+      <p>定义要显示的图像的 URL。</p>
+      <p>仅用于 type="image" 时。</p></td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>step</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>template</td>
+    <td><I>template</I></td>
+    <td>定义一个或多个模板。</td>
+    <td>&nbsp;</td>
+    <td>5</td></tr>
+  <tr>
+    <td>type</td>
+    <td>
+      <ul>
+        <li>button 
+        <li>checkbox 
+        <li>date 
+        <li>datetime 
+        <li>datetime-local 
+        <li>email 
+        <li>file 
+        <li>hidden 
+        <li>image 
+        <li>month 
+        <li>number 
+        <li>password 
+        <li>radio 
+        <li>range 
+        <li>reset 
+        <li>submit 
+        <li>text 
+        <li>time 
+        <li>url 
+        <li>week </li></ul></td>
+    <td>
+      <p>指示 input 元素的类型。</p>
+      <p>默认值是 "text"</p>
+      <p>注释：该属性不是必需的。但是我们认为应该使用它。</p>
+      <p></p></td>
+    <td>4</td>
+    <td>5</td></tr>
+  <tr>
+    <td>value</td>
+    <td>value</td>
+    <td>
+      <p>对于按钮、重置按钮和确认按钮：定义按钮上的文本。</p>
+      <p>对于图像按钮：定义传递向某个脚本的此域的符号结果。</p>
+      <p>对于复选框和单选按钮：定义 input 元素被点击时的结果。</p>
+      <p>对于隐藏域、密码域以及文本域：定义元素的默认值。</p>
+      <p>注释：不能与 type="file" 一同使用。</p>
+      <p>注释：与 type="checkbox" 和 type="radio" 一同使用时，此元素是必需的。</p></td>
+    <td>4</td>
+    <td>5</td></tr></tbody></table>
+<h3>标准属性</h3><pre>class, contenteditable, contextmenu, dir, draggable, id, irrelevant, 
+lang, ref, registrationmark, tabindex, template, title</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_standardattributes.htm">HTML 5 中标准属性</a>。</p>
+<h3>事件属性</h3><pre>onabort, onbeforeunload, onblur, onchange, onclick, oncontextmenu, 
+ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, 
+ondragstart, ondrop, onerror, onfocus, onkeydown, onkeypress, onkeyup, 
+onload, onmessage, onmousedown, onmousemove, onmouseover, onmouseout, 
+onmouseup, onmousewheel, onresize, onscroll, onselect, onsubmit, onunload
+</pre>
+<p>如需完整的描述，请访问 <a href="html5_ref_eventattributes.htm">HTML 5 
+中事件属性</a>。</p></div>
+<div class="example">
+<h2>TIY 实例</h2>
+<DL>
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_inputfields">文本域 (Text fields)</a> 
+  <DD>本例演示如何在HTML页面创建文本域。用户可以在文本域写入文本。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_passwordfields">密码域</a> 
+  <DD>本例演示如何创建 HTML 的密码域。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_checkboxes">复选框</a> 
+  <DD>本例演示如何在 HTML 页中创建文本框。用户可以选中或取消选取复选框。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_radiobuttons">单选按钮</a> 
+  <DD>本例演示如何在 HTML 中创建单选按钮。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_button">创建按钮</a> 
+  <DD>本例演示如何创建按钮。你可以对按钮上的文字进行自定义。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_form_submit">带有输入框和确认按钮的表单</a> 
+  <DD>本例演示如何向页面添加表单。此表单包含两个输入框和一个确认按钮。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_form_checkbox">带有复选框的表单</a> 
+  <DD>此表单包含两个复选框和一个确认按钮。 
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_form_radio">带有单选按钮的表单</a> 
+  <DD>此表单包含两个单选框和一个确认按钮。 </DD></DL></div></div>
+
+</body>
+
+</html>

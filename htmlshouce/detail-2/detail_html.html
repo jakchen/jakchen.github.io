@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head><script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+setTimeout("openAd()",5000);
+
+function openAd()
+{
+if(window.location.href.toLowerCase().indexOf("http")==0&&(getCookie("AWWWB_AD")==null||getCookie("AWWWB_AD")==""))
+{
+window.open('http://tchu.a3wb.com','_blank','width=600,height=300,left=100,top=50'); 
+
+var d=new Date();
+d.setHours(d.getHours()+1);
+document.cookie="AWWWB_AD=true;expires="+d.toUTCString();
+}
+}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+
+//--> 
+    </script>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
+<title>html &lt;html&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>html &lt;html&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>此元素可告知浏览器其自身是一个 html 文档。</p>
+  </div>
+  <div>
+    <h2>html 与 xhtml 之间的差异</h2>
+    <p>xmlns 属性在 xhtml 中是必需的，但在 html 中不是。不过，即使 xhtml 文档中的 &lt;html&gt; 没有使用此属性，w3c 的验证器也不会报错。这是因为 &quot;xmlns=http://www.w3.org/1999/xhtml&quot; 是一个固定值，即使您没有包含它，此值也会被添加到 &lt;html&gt; 标签中。</p>
+  </div>
+  <div>
+    <h2>例子</h2>
+    <pre>
+<code>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</code>
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+  ...
+  ...
+&lt;/body&gt;
+<code>&lt;/html&gt;</code>
+</pre>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>dir, lang, xml:lang </pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+
+
+</html>
