@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML 5 �¼�����</title>
+<title>HTML 5 事件属性</title>
 </head>
 <body>
 
@@ -12,224 +12,224 @@
 
 
 <div id=maincontent>
-<h1>HTML 5 �¼�����</h1>
+<h1>HTML 5 事件属性</h1>
 
 <div>
-<p class="note">HTML Ԫ�ؿ�ӵ���¼����ԣ���Щ������������д�����Ϊ�����統�û�����һ�� HTML Ԫ��ʱ����һ�� 
-JavaScript�������г����¼����ԣ����԰����ǲ��� HTML ��ǩ�������¼���Ϊ��</p>
+<p class="note">HTML 元素可拥有事件属性，这些属性在浏览器中触发行为，比如当用户单击一个 HTML 元素时启动一段 
+JavaScript。下面列出的事件属性，可以把它们插入 HTML 标签来定义事件行为。</p>
 </div>
 <div>
-<h2>HTML 4.01 �� HTML 5 ֮��Ĳ���</h2>
-<p>HTML 5 �е����¼���onabort, onbeforeunload, oncontextmenu, ondrag, ondragend, 
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>HTML 5 中的新事件：onabort, onbeforeunload, oncontextmenu, ondrag, ondragend, 
 ondragenter, ondragleave, ondragover, ondragstart, ondrop, onerror, onmessage, 
-onmousewheel, onresize, onscroll, onunload��</p>
-<p>����֧�ֵ� HTML 4.01 ���ԣ�onreset��</p></div>
+onmousewheel, onresize, onscroll, onunload。</p>
+<p>不再支持的 HTML 4.01 属性：onreset。</p></div>
 <div>
-<h2>����</h2>
+<h2>属性</h2>
 <table class=dataintable>
   <tbody>
   <tr>
-    <th>����</th>
-    <th>ֵ</th>
-    <th>����</th>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
     <th>4</th>
     <th>5</th></tr>
   <tr>
     <td>onabort</td>
     <td><I>script&nbsp;</I></td>
-    <td>���� abort �¼�ʱ���нű���</td>
+    <td>发生 abort 事件时运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onbeforeonload</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ؼ���ǰ���нű���</td>
+    <td>在元素加载前运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onblur</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ��ʧȥ����ʱ���нű���</td>
+    <td>当元素失去焦点时运行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onchange</td>
     <td><I>script</I></td>
-    <td>��Ԫ�ظı�ʱ���нű���</td>
+    <td>当元素改变时运行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onclick</td>
     <td><I>script</I>&nbsp;</td>
-    <td>�������ʱ�����ű���</td>
+    <td>在鼠标点击时允许脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>oncontextmenu</td>
     <td><I>script&nbsp;</I></td>
-    <td>���˵�������ʱ���нű���</td>
+    <td>当菜单被触发时运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondblclick</td>
     <td><I>script</I>&nbsp;</td>
-    <td>�����˫��ʱ���нű���</td>
+    <td>当鼠标双击时运行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>ondrag</td>
     <td><I>script&nbsp;</I></td>
-    <td>ֻҪ�ű��ڱ��϶��������ű���</td>
+    <td>只要脚本在被拖动就允许脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondragend</td>
     <td><I>script&nbsp;</I></td>
-    <td>���϶���������ʱ���нű���</td>
+    <td>在拖动操作结束时运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondragenter</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ر��϶���һ���Ϸ��ķ���Ŀ��ʱ��ִ�нű���</td>
+    <td>当元素被拖动到一个合法的放置目标时，执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondragleave</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ���뿪�Ϸ��ķ���Ŀ��ʱ��</td>
+    <td>当元素离开合法的放置目标时。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondragover</td>
     <td><I>script&nbsp;</I></td>
-    <td>ֻҪԪ�����ںϷ��ķ���Ŀ�����϶�ʱ����ִ�нű���</td>
+    <td>只要元素正在合法的放置目标上拖动时，就执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondragstart</td>
     <td><I>script&nbsp;</I></td>
-    <td>���϶�������ʼʱִ�нű���</td>
+    <td>在拖动操作开始时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>ondrop</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�����ڱ��϶�ʱִ�нű���</td>
+    <td>当元素正在被拖动时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onerror</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ؼ��صĹ����г��ִ���ʱִ�нű���</td>
+    <td>当元素加载的过程中出现错误时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onfocus</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ػ�ý���ʱִ�нű���</td>
+    <td>当元素获得焦点时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onkeydown</td>
     <td><I>script</I>&nbsp;</td>
-    <td>����ť����ʱִ�нű���</td>
+    <td>当按钮按下时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onkeypress</td>
     <td><I>script</I>&nbsp;</td>
-    <td>������������ʱִ�нű���</td>
+    <td>当按键被按下时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onkeyup</td>
     <td><I>script</I>&nbsp;</td>
-    <td>����ť�ɿ�ʱִ�нű���</td>
+    <td>当按钮松开时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onload</td>
     <td><I>script</I></td>
-    <td>���ĵ�����ʱִ�нű���</td>
+    <td>当文档加载时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmessage</td>
     <td><I>script&nbsp;</I></td>
-    <td>�� message �¼�����ʱִ�нű���</td>
+    <td>当 message 事件触发时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onmousedown</td>
     <td><I>script</I>&nbsp;</td>
-    <td>����갴ť����ʱִ�нű���</td>
+    <td>当鼠标按钮按下时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmousemove</td>
     <td><I>script</I>&nbsp;</td>
-    <td>�����ָ���ƶ�ʱִ�нű���</td>
+    <td>当鼠标指针移动时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmouseover</td>
     <td><I>script</I></td>
-    <td>�����ָ���ƶ���һ��Ԫ����ʱִ�нű���</td>
+    <td>当鼠标指针移动到一个元素上时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmouseout</td>
     <td><I>script</I></td>
-    <td>�����ָ���Ƴ�Ԫ��ʱִ�нű���</td>
+    <td>当鼠标指针移出元素时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmouseup</td>
     <td><I>script</I>&nbsp;</td>
-    <td>����갴ť�ɿ�ʱִ�нű���</td>
+    <td>当鼠标按钮松开时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onmousewheel</td>
     <td><I>script&nbsp;</I></td>
-    <td>�������ֹ���ʱִ�нű���</td>
+    <td>当鼠标滚轮滚动时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onreset</td>
     <td><I>script&nbsp;</I></td>
-    <td>����������ʱִ�нű�����֧�֡�</td>
+    <td>当表单重置时执行脚本。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>onresize</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ص�����Сʱ���нű���</td>
+    <td>当元素调整大小时运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onscroll</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ع�����������ʱִ�нű���</td>
+    <td>当元素滚动条被滚动时执行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr>
   <tr>
     <td>onselect</td>
     <td><I>script&nbsp;</I></td>
-    <td>��Ԫ�ر�ѡ��ʱִ�нű���</td>
+    <td>当元素被选中时执行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onsubmit</td>
     <td><I>script</I></td>
-    <td>�������ύʱ���нű���</td>
+    <td>当表单提交时运行脚本。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>onunload</td>
     <td><I>script</I></td>
-    <td>���ĵ�ж��ʱ���нű���</td>
+    <td>当文档卸载时运行脚本。</td>
     <td>&nbsp;</td>
     <td>5</td></tr></tbody></table></div>
 </div>

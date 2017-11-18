@@ -4,36 +4,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;link&gt; ��ǩ</title>
+<title>HTML &lt;link&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;link&gt; ��ǩ</h1>
+  <h1>HTML &lt;link&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>��Ԫ�ض����˵�ǰ�ĵ��� Web �����������ĵ��Ĺ�ϵ��</p>
+    <h2>定义和用法</h2>
+    <p>此元素定义了当前文档与 Web 集合中其他文档的关系。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
-    <p>�� HTML �У�&lt;link&gt; ��ǩû�н�����ǩ��</p>
-    <p>�� XHTML �У�&lt;link&gt; ��ǩ���뱻��ȷ�Ĺرա�</p>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 中，&lt;link&gt; 标签没有结束标签。</p>
+    <p>在 XHTML 中，&lt;link&gt; 标签必须被正确的关闭。</p>
   </div>
   <div>
-    <h2>��ʾ��ע�ͣ�</h2>
-    <p class="note"><span>ע�ͣ�</span>link Ԫ���ǿ�Ԫ�أ������������ԡ�</p>
-    <p class="note"><span>ע�ͣ�</span>��Ԫ��ֻ�ܴ����� head ���֣��������ɳ����κδ�����</p>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>link 元素是空元素，它仅包含属性。</p>
+    <p class="note"><span>注释：</span>此元素只能存在于 head 部分，不过它可出现任何次数。</p>
   </div>
   <div>
-    <h2>����</h2>
+    <h2>例子</h2>
     <pre>&lt;head&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;theme.css&quot;   /&gt;
 &lt;/head&gt;
 </pre>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -43,28 +43,28 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
       <tr>
         <td>charset</td>
         <td>charset</td>
-        <td>����Ŀ�� URL ���ַ����뷽ʽ��Ĭ��ֵ�� "ISO-8859-1"��</td>
+        <td>定义目标 URL 的字符编码方式。默认值是 "ISO-8859-1"。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>href</td>
         <td>URL</td>
-        <td>Ŀ���ĵ�����Դ�� URL��</td>
+        <td>目标文档或资源的 URL。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>hreflang</td>
         <td>language_code</td>
-        <td>����Ŀ�� URL �Ļ�׼���ԡ�</td>
+        <td>定义目标 URL 的基准语言。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -80,7 +80,7 @@
             <li>aural</li>
             <li>all</li>
           </ul></td>
-        <td>�涨�ĵ�����ʾ��ʲô�豸�ϡ�</td>
+        <td>规定文档将显示在什么设备上。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -103,7 +103,7 @@
             <li>stylesheet</li>
             <li>subsection</li>
           </ul></td>
-        <td>���嵱ǰ�ĵ���Ŀ���ĵ�֮��Ĺ�ϵ��</td>
+        <td>定义当前文档与目标文档之间的关系。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -126,7 +126,7 @@
             <li>stylesheet</li>
             <li>subsection</li>
           </ul></td>
-        <td>����Ŀ���ĵ��뵱ǰ�ĵ�֮��Ĺ�ϵ��</td>
+        <td>定义目标文档与当前文档之间的关系。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -137,46 +137,46 @@
             <li>_self</li>
             <li>_top</li>
           </ul></td>
-        <td>�ںδ���Ŀ�� URL:
+        <td>在何处打开目标 URL:
           <ul>
-            <li>_blank - ��һ���µ�δ�����Ĵ��������ĵ�</li>
-            <li>_self - ����ͬ�Ŀ�ܻ򴰿�������Ŀ���ĵ�</li>
-            <li>_parent - ���ĵ����븸���ڻ�����˳��������õĿ�ܵĿ�ܼ�</li>
-            <li>_top - ���ĵ���������ó����ӵĴ���,ȡ���κε�ǰ���ڴ�������ʾ�Ŀ��</li>
+            <li>_blank - 在一个新的未命名的窗口载入文档</li>
+            <li>_self - 在相同的框架或窗口中载入目标文档</li>
+            <li>_parent - 把文档载入父窗口或包含了超链接引用的框架的框架集</li>
+            <li>_top - 把文档载入包含该超链接的窗口,取代任何当前正在窗口中显示的框架</li>
           </ul></td>
         <td>TF</td>
       </tr>
       <tr>
         <td>title</td>
-        <td>�ַ���</td>
-        <td>ΪҪ���ӵ��ĵ�ָ�����⡣�����ò����б����Դ������ͼ����HTML�ĵ���ʱ�������Էǳ����á�����������£������������ʾ�����õ��ĵ�ʱʹ�� &lt;link&gt; ���⡣</td>
+        <td>字符串</td>
+        <td>为要链接的文档指定标题。在引用不带有标题的源（例如图像或非HTML文档）时，该属性非常有用。在这种情况下，浏览器会在显示被引用的文档时使用 &lt;link&gt; 标题。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>type</td>
         <td><p>MIME_type</p>
-          <p>���磺</p>
+          <p>比如：</p>
           <ul>
             <li>text/css</li>
             <li>text/javascript</li>
             <li>image/gif</li>
           </ul></td>
-        <td>�涨Ŀ�� URL �� MIME ���͡�</td>
+        <td>规定目标 URL 的 MIME 类型。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
+    <h2>事件属性</h2>
     <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
 onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

@@ -4,31 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;a&gt; ��ǩ</title>
+<title>HTML &lt;a&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;a&gt; ��ǩ</h1>
+  <h1>HTML &lt;a&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>&lt;a&gt; ��ǩ�ɶ���ê��һ��ê�������÷���</p>
+    <h2>定义和用法</h2>
+    <p>&lt;a&gt; 标签可定义锚。一个锚有两种用法：</p>
     <ul>
-      <li>ͨ��ʹ�� href ���ԣ�����һ��������һ���ĵ�������</li>
-      <li>ͨ��ʹ�� name �� id ���ԣ�����һ���ĵ��ڲ�����ǩ</li>
+      <li>通过使用 href 属性，创建一个到另外一个文档的链接</li>
+      <li>通过使用 name 或 id 属性，创建一个文档内部的书签</li>
     </ul>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
+    <h2>HTML 与 XHTML 之间的差异</h2>
     <p>NONE</p>
   </div>
   <div>
-    <h2>��ʾ��ע�ͣ�</h2>
-    <p class="note"><span>ע�ͣ�</span>�����ӵ�ҳ��ͨ������ʾ�ڵ�ǰ������������У��������涨�������� target��</p>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>被链接的页面通常被显示在当前的浏览器窗口中，除非您规定了其他的 target。</p>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -38,41 +38,41 @@
 			</colgroup>
       <thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
       <tr>
         <td>charset</td>
-        <td>��׼�ַ���������</td>
-        <td>�涨Ŀ�� URL ���ַ����롣</td>
+        <td>标准字符集的名称</td>
+        <td>规定目标 URL 的字符编码。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>coords</td>
         <td>&nbsp;</td>
-        <td>�μ� <a href="#coords_shape">coords ���Ժ� shape ����</a></td>
+        <td>参见 <a href="#coords_shape">coords 属性和 shape 属性</a></td>
         <td>STF</td>
       </tr>
       <tr>
         <td>href</td>
         <td>URL</td>
-        <td>���ӵ�Ŀ�� URL��</td>
+        <td>链接的目标 URL。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>hreflang</td>
-        <td>ISO ��׼��˫�ַ����Դ���</td>
-        <td>�涨Ŀ�� URL �Ļ�׼���ԡ�</td>
+        <td>ISO 标准的双字符语言代码</td>
+        <td>规定目标 URL 的基准语言。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>name</td>
         <td>section_name</td>
-        <td>����һ��ê����ʹ�ô��������ĵ��д���ĳ����ǩ��<br />
-          ��XHTML��δ���汾�У�name���Իᱻid����ȡ����</td>
+        <td>命名一个锚。请使用此属性在文档中创建某个书签。<br />
+          在XHTML的未来版本中，name属性会被id属性取代！</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -95,7 +95,7 @@
             <li>help</li>
             <li>bookmark</li>
           </ul></td>
-        <td>�涨��ǰ�ĵ���Ŀ�� URL ֮��Ĺ�ϵ��</td>
+        <td>规定当前文档与目标 URL 之间的关系。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -118,13 +118,13 @@
             <li>help</li>
             <li>bookmark</li>
           </ul></td>
-        <td>�涨Ŀ�� URL �뵱ǰ�ĵ�֮��Ĺ�ϵ��</td>
+        <td>规定目标 URL 与当前文档之间的关系。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>shape</td>
         <td>&nbsp;</td>
-        <td>�μ� <a href="#coords_shape">coords ���Ժ� shape ����</a></td>
+        <td>参见 <a href="#coords_shape">coords 属性和 shape 属性</a></td>
         <td>STF</td>
       </tr>
       <tr>
@@ -135,40 +135,40 @@
             <li>_self</li>
             <li>_top</li>
           </ul></td>
-        <td>�ںδ���Ŀ�� URL��
+        <td>在何处打开目标 URL：
           <ul>
-            <li>_blank - ��һ���µ�δ�����Ĵ��������ĵ�</li>
-            <li>_self - ����ͬ�Ŀ�ܻ򴰿�������Ŀ���ĵ�</li>
-            <li>_parent - ���ĵ����븸���ڻ�����˳��������õĿ�ܵĿ�ܼ�</li>
-            <li>_top - ���ĵ���������ó����ӵĴ���,ȡ���κε�ǰ���ڴ�������ʾ�Ŀ��</li>
+            <li>_blank - 在一个新的未命名的窗口载入文档</li>
+            <li>_self - 在相同的框架或窗口中载入目标文档</li>
+            <li>_parent - 把文档载入父窗口或包含了超链接引用的框架的框架集</li>
+            <li>_top - 把文档载入包含该超链接的窗口,取代任何当前正在窗口中显示的框架</li>
           </ul></td>
         <td>TF</td>
       </tr>
       <tr>
         <td>type</td>
-        <td>MIME ��������</td>
-        <td>�涨Ŀ�� URL �� MIME ���͡�</td>
+        <td>MIME 编码类型</td>
+        <td>规定目标 URL 的 MIME 类型。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2><a id="coords_shape">coords ���Ժ� shape ����</a></h2>
-    <p>��ǰ���е�������Ѿ�����֧�������������ˣ��� &lt;area&gt; ��ǩ�е�ͬ���������ƣ�coords �� shape ���Ի�Ϊ &lt;a&gt; ��ǩ����һ��Ӱ������</p>
-    <p>ֻ���� &lt;a&gt; ��ǩ�� &lt;map&gt; ��ǩ��һ����ʱ���ſ����� &lt;a&gt; ��ǩ��ʹ�����������ԡ�</p>
-    <p>�μ� <a href="detail_map.html">&lt;map&gt; ��ǩ</a>���μ� <a href="detail_area.html">&lt;area&gt; ��ǩ</a>���μ� <a href="detail_area_prop_coords.html">&lt;area&gt; ��ǩ�� coords ����</a>��</p>
+    <h2><a id="coords_shape">coords 属性和 shape 属性</a></h2>
+    <p>当前流行的浏览器已经不再支持这两种属性了，与 &lt;area&gt; 标签中的同名属性类似，coords 和 shape 属性会为 &lt;a&gt; 标签定义一个影响区域。</p>
+    <p>只有在 &lt;a&gt; 标签是 &lt;map&gt; 标签的一部分时，才可以在 &lt;a&gt; 标签中使用这两种属性。</p>
+    <p>参见 <a href="detail_map.html">&lt;map&gt; 标签</a>。参见 <a href="detail_area.html">&lt;area&gt; 标签</a>。参见 <a href="detail_area_prop_coords.html">&lt;area&gt; 标签的 coords 属性</a>。</p>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang, tabindex, accesskey</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
-    <pre>onfocus, onblur, onclick, ondblclick, onmousedown, onmouseup, 
-onmouseover, onmousemove, onmouseout, onkeypress, onkeydown, onkeyup 
+    <h2>事件属性</h2>
+    <pre>onfocus, onblur, onclick, ondblclick, onmousedown, onmouseup,
+onmouseover, onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

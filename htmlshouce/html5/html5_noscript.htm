@@ -4,26 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML 5 <noscript> ��ǩ</title>
+<title>HTML 5 <noscript> 标签</title>
 </head>
 <body>
 <div id=maincontent>
-<h1>HTML 5 &lt;noscript&gt; ��ǩ</h1>
+<h1>HTML 5 &lt;noscript&gt; 标签</h1>
 <div>
-<h2>������÷�</h2>
-<p>noscript Ԫ�����������ڽű�δ��ִ��ʱ��������ݣ��ı�����</p>
-<p>�˱�ǩ���ڿ�ʶ�� &lt;script&gt; ��ǩ���޷�֧�����нű����������</p></div>
+<h2>定义和用法</h2>
+<p>noscript 元素用来定义在脚本未被执行时的替代内容（文本）。</p>
+<p>此标签用于可识别 &lt;script&gt; 标签但无法支持其中脚本的浏览器。</p></div>
 <div>
-<h2>HTML 4.01 �� HTML 5 ֮��Ĳ���</h2>
-<p>û�С�</p></div>
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>没有。</p></div>
 <div>
-<h2>��ʾ��ע��</h2>
-<P class=note><SPAN>ע�ͣ�</SPAN>��������֧�ֽű�����ô��������ʾ�� noscript Ԫ���е��ı���</p>
-<P class=note><SPAN>ע�ͣ�</SPAN>�޷�ʶ�� &lt;script&gt; 
-��ǩ���������ѱ�ǩ��������ʾ��ҳ���ϡ�Ϊ�˱������������������Ӧ����ע�ͱ�ǩ�����ؽű�����ʽ�ģ��޷�ʶ�� &lt;script&gt; 
-��ǩ�ģ�����������ע�ͣ������Ͳ���ѱ�ǩ������д��ҳ���ϣ�����ʽ��������򶮵�ִ����Щ�ű�����ʹ���Ǳ���Χ��ע�ͱ�ǩ�У�</p></div>
+<h2>提示和注释</h2>
+<P class=note><SPAN>注释：</SPAN>如果浏览器支持脚本，那么它不会显示出 noscript 元素中的文本。</p>
+<P class=note><SPAN>注释：</SPAN>无法识别 &lt;script&gt; 
+标签的浏览器会把标签的内容显示到页面上。为了避免浏览器这样做，您应当在注释标签中隐藏脚本。老式的（无法识别 &lt;script&gt; 
+标签的）浏览器会忽略注释，这样就不会把标签的内容写到页面上，而新式的浏览器则懂得执行这些脚本，即使它们被包围在注释标签中！</p></div>
 <div>
-<h2>����</h2>
+<h2>例子</h2>
 <h3>JavaScript</h3><pre>&lt;body&gt;
   ...
   ...
@@ -54,9 +54,9 @@
 &lt;/body&gt;
 </pre></div>
 <div class=example>
-<h2>TIY ʵ��</h2>
+<h2>TIY 实例</h2>
 <DL>
-  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_noscript">�����ڲ�֧�ֽű��������</a> 
-  <DD>������ʾ��ζԸ���֧�ֽű���������� </DD></DL></div></div>
+  <DT><a href="http://t.mb5u.com/tiy/t.htm?f=html_noscript">运行于不支持脚本的浏览器</a> 
+  <DD>本例演示如何对付不支持脚本的浏览器。 </DD></DL></div></div>
 
 </body></html>

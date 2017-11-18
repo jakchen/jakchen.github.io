@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;tr&gt; ��ǩ</title>
+<title>HTML &lt;tr&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;tr&gt; ��ǩ</h1>
+  <h1>HTML &lt;tr&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>�ڱ����ж���һ�С�</p>
+    <h2>定义和用法</h2>
+    <p>在表格中定义一行。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
-    <p>�� HTML 4.01 �У�tr Ԫ�ص� &quot;bgcolor&quot; �ǲ����޳�ʹ�õġ�</p>
-    <p>�� XHTML 1.0 Strict DTD �У�tr Ԫ�ص� &quot;bgcolor&quot; �ǲ���֧�ֵġ�</p>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，tr 元素的 &quot;bgcolor&quot; 是不被赞成使用的。</p>
+    <p>在 XHTML 1.0 Strict DTD 中，tr 元素的 &quot;bgcolor&quot; 是不被支持的。</p>
   </div>
   <div>
-    <h2>����</h2>
+    <h2>例子</h2>
     <pre>
 &lt;table border = &quot;1&quot;&gt;
 <code>&lt;tr&gt;</code>
@@ -31,8 +31,8 @@
 </pre>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -42,9 +42,9 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
@@ -57,7 +57,7 @@
             <li>justify</li>
             <li>char</li>
           </ul></td>
-        <td>���嵥Ԫ���е��ı�����</td>
+        <td>定义单元格中的文本排列</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -67,15 +67,15 @@
             <li>#xxxxxx</li>
             <li>colorname</li>
           </ul></td>
-        <td>�涨����Ԫ��ı�����ɫ�����޳�ʹ�á���ʹ����ʽȡ����֮��</td>
+        <td>规定表格单元格的背景颜色。不赞成使用。请使用样式取而代之。</td>
         <td>TF</td>
       </tr>
       <tr>
         <td>char</td>
         <td>character</td>
-        <td>�涨�����ĸ��ַ��������ı����롣 <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�ã� <br />
-          <a href="#char_charoff">�й� char �� charoff ���Ե���ϸ��Ϣ</a>��</td>
+        <td>规定根据哪个字符来进行文本对齐。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！ <br />
+          <a href="#char_charoff">有关 char 和 charoff 属性的详细信息</a>。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -84,9 +84,9 @@
             <li>pixels</li>
             <li>%</li>
           </ul>
-        <td>�涨��һ�������ַ���ƫ������ <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�ã� <br />  
-          <a href="#char_charoff">�й� char �� charoff ���Ե���ϸ��Ϣ</a>��</td>
+        <td>规定第一个对齐字符的偏移量。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！ <br />  
+          <a href="#char_charoff">有关 char 和 charoff 属性的详细信息</a>。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -97,30 +97,30 @@
             <li>bottom</li>
             <li>baseline</li>
           </ul></td>
-        <td>�涨��Ԫ�����ı��Ĵ�ֱ���з�ʽ��</td>
+        <td>规定单元格中文本的垂直排列方式。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2><a id="char_charoff">char �� charoff ����</a></h2>
-    <p>��ʹ����򵥵����ִ�����Ҳ�����ڱ���������ʮ���������еĵ㡣ֱ�� HTML 4.0 ��׼�ĳ��֣���ҳ�������һֱ���ܳ�������ⷽ���Ҫ��</p>
-    <p>���ڣ�����ʹ�� char ���ԣ���ָ���������ڵ�Ԫ���е�һ����ĸ�������ĸ���Ƕ���������ߡ�����ҪΪ char ָ��ֵ�������û��ָ���Ļ���Ĭ�ϵ��ַ��ǻ������ԣ����磬��Ӣ������һ����㣬���ڷ�������һ�����š������һ�����ַ�ָ��Ϊ char ���Ե�ֵ�������ָ����ͬ�Ķ����ַ���</p>
-    <p>ʹ�� charoff ���Ժ�һ������ֵ��ָ��ÿ�ж����ַ���һ�γ��ֵ�ƫ���������һ���в����������ַ���Ӧ��ˮƽƽ�Ƶ�����λ�õ����</p>
-    <p>char �� charoff ������ HTML 4 �� XHTML �����³��ֵ����ԣ���û�еõ��κ�һ�������������֧�֡�</p>
+    <h2><a id="char_charoff">char 和 charoff 属性</a></h2>
+    <p>即使是最简单的文字处理器也允许在表格中排列十进制数字中的点。直到 HTML 4.0 标准的出现，网页设计语言一直不能充分满足这方面的要求。</p>
+    <p>现在，可以使用 char 属性，来指定表格行内单元格中的一个字母，这个字母就是对齐的中心线。不需要为 char 指定值。如果你没有指定的话，默认的字符是基于语言：例如，在英语中是一个句点，而在法语中是一个逗号。如果把一个单字符指定为 char 属性的值，则可以指定不同的对齐字符。</p>
+    <p>使用 charoff 属性和一个整数值可指定每行对齐字符第一次出现的偏移量。如果一行中不包括对齐字符，应该水平平移到对齐位置的最后。</p>
+    <p>char 和 charoff 属性在 HTML 4 和 XHTML 中是新出现的属性，还没有得到任何一个流行浏览器的支持。</p>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
+    <h2>事件属性</h2>
     <pre>
 onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
 onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

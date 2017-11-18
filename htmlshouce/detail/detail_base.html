@@ -4,30 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;base&gt; ��ǩ</title>
+<title>HTML &lt;base&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;base&gt; ��ǩ</h1>
+  <h1>HTML &lt;base&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>base Ԫ�ؿɹ涨ҳ�����������ӵĻ�׼ URL��</p>
-    <p>ͨ������£��������ӵ�ǰ�ĵ��� URL ����ȡ��Ӧ��Ԫ������д��� URL �еĿհס�</p>
-    <p>ʹ�� &lt;base&gt; ��ǩ���Ըı���һ�㡣�������󽫲���ʹ�õ�ǰ�ĵ��� URL����ʹ��ָ���Ļ��� URL ���������е���� URL�������а��� &lt;a&gt;��&lt;img&gt;��&lt;link&gt;��&lt;form&gt; ��ǩ�е� URL��</p>
+    <h2>定义和用法</h2>
+    <p>base 元素可规定页面中所有链接的基准 URL。</p>
+    <p>通常情况下，浏览器会从当前文档的 URL 中提取相应的元素来填写相对 URL 中的空白。</p>
+    <p>使用 &lt;base&gt; 标签可以改变这一点。浏览器随后将不再使用当前文档的 URL，而使用指定的基本 URL 来解析所有的相对 URL。这其中包括 &lt;a&gt;、&lt;img&gt;、&lt;link&gt;、&lt;form&gt; 标签中的 URL。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
-    <p>�� HTML �У�&lt;base&gt; ��ǩû�н�����ǩ��</p>
-    <p>�� XHTML �У�&lt;base&gt; ��ǩ���뱻��ȷ�عرա�</p>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 中，&lt;base&gt; 标签没有结束标签。</p>
+    <p>在 XHTML 中，&lt;base&gt; 标签必须被正确地关闭。</p>
   </div>
   <div>
-    <h2>��ʾ��ע�ͣ�</h2>
-    <p class="note"><span>ע�ͣ�</span>&lt;base&gt; ��ǩ����λ�� head Ԫ���ڲ���</p>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>&lt;base&gt; 标签必须位于 head 元素内部。</p>
   </div>
   <div>
-    <h2>���������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>必需的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -37,22 +37,22 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
       <tr>
         <td>href</td>
         <td>URL</td>
-        <td>�涨ҳ�����������ӵĻ�׼ URL��</td>
+        <td>规定页面中所有链接的基准 URL。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��ѡ������</h2>
+    <h2>可选的属性</h2>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -62,9 +62,9 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
@@ -76,19 +76,19 @@
             <li>_self</li>
             <li>_top</li>
           </ul></td>
-        <td>�ںδ���ҳ�������е�����:
+        <td>在何处打开页面中所有的链接:
           <ul>
-            <li>_blank - ��һ���µ�δ�����Ĵ��������ĵ�</li>
-            <li>_self - ����ͬ�Ŀ�ܻ򴰿�������Ŀ���ĵ�</li>
-            <li>_parent - ���ĵ����븸���ڻ�����˳��������õĿ�ܵĿ�ܼ�</li>
-            <li>_top - ���ĵ���������ó����ӵĴ���,ȡ���κε�ǰ���ڴ�������ʾ�Ŀ��</li>
+            <li>_blank - 在一个新的未命名的窗口载入文档</li>
+            <li>_self - 在相同的框架或窗口中载入目标文档</li>
+            <li>_parent - 把文档载入父窗口或包含了超链接引用的框架的框架集</li>
+            <li>_top - 把文档载入包含该超链接的窗口,取代任何当前正在窗口中显示的框架</li>
           </ul></td>
         <td>TF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��׼�����Ժ��¼�</h2>
+    <h2>标准的属性和事件</h2>
     <p>NONE</p>
   </div>
 </div>

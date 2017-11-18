@@ -4,24 +4,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;th&gt; ��ǩ</title>
+<title>HTML &lt;th&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;th&gt; ��ǩ</h1>
+  <h1>HTML &lt;th&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>��������ڵı�ͷ��Ԫ�񡣴� th Ԫ���ڲ����ı�ͨ�������Ϊ���塣</p>
+    <h2>定义和用法</h2>
+    <p>定义表格内的表头单元格。此 th 元素内部的文本通常会呈现为粗体。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
-    <p>�� HTML 4.01 �У�th Ԫ�ص� &quot;bgcolor&quot;��&quot;height&quot;��&quot;width&quot; �Լ� &quot;nowrap&quot; �����ǲ����޳�ʹ�õġ�</p>
-    <p>�� XHTML 1.0 Strict DTD �У�th Ԫ�ص� &quot;bgcolor&quot;��&quot;height&quot;��&quot;width&quot; �Լ� &quot;nowrap&quot; �����ǲ���֧�֡�</p>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，th 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 属性是不被赞成使用的。</p>
+    <p>在 XHTML 1.0 Strict DTD 中，th 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 属性是不被支持。</p>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -31,16 +31,16 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
       <tr>
         <td>abbr</td>
         <td>abbr_text</td>
-        <td>�涨һ����Ԫ�������ݵ���д�汾��</td>
+        <td>规定一个单元格中内容的缩写版本。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -53,13 +53,13 @@
           <li>char</li>
           <ul>
         </td>
-        <td>�涨��Ԫ�����ݵ�ˮƽ���з�ʽ��</td>
+        <td>规定单元格内容的水平排列方式。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>axis</td>
         <td>category_names</td>
-        <td>Ϊ��Ԫ����һ�����ơ�</td>
+        <td>为单元格定义一个名称。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -69,14 +69,14 @@
             <li>#xxxxxx</li>
             <li>colorname</li>
           </ul></td>
-        <td>�涨����Ԫ��ı�����ɫ�����޳�ʹ�ã���ʹ����ʽ�������</td>
+        <td>规定表格单元格的背景颜色。不赞成使用，请使用样式替代它。</td>
         <td>TF</td>
       </tr>
       <tr>
         <td>char</td>
         <td>character</td>
-        <td>�涨�ĸ��ַ�������������ߣ����罫ʮ�������ֶ��롣 <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�á�</td>
+        <td>规定哪个字符是最齐的中心线，例如将十进制数字对齐。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用。</td>
         <td>STF</td>
       <tr>
         <td>charoff</td>
@@ -84,38 +84,38 @@
             <li>pixels</li>
             <li>%</li>
           </ul></td>
-        <td>�涨ÿ�ж����ַ���һ�γ��ֵ�ƫ���������һ���в����������ַ���Ӧ��ˮƽƽ�Ƶ�����λ�õ���� <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�á�</td>
+        <td>规定每行对齐字符第一次出现的偏移量，如果一行中不包含对齐字符，应该水平平移到对齐位置的最后。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>colspan</td>
         <td>number</td>
-        <td>ָ���˵�Ԫ��ɺ�������</td>
+        <td>指明此单元格可横跨的列数</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>headers</td>
         <td>header_cells'_id</td>
-        <td>һ���ո�ָ��ĵ�Ԫ��ID�б�����ЩID��Ϊ��Ԫ���ṩ��ͷ����Ϣ���������������ı��������Ϊĳ�������ĵ�Ԫ����ֱ�ͷ��Ϣ��</td>
+        <td>一个空格分隔的单元格ID列表，这些ID可为单元格提供表头的信息。此属性允许纯文本的浏览器为某个给定的单元格呈现表头信息。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>height</td>
         <td>pixels</td>
-        <td>�涨����Ԫ��ĸ߶ȡ�Deprecated. Use styles instead.</td>
+        <td>规定表格单元格的高度。Deprecated. Use styles instead.</td>
         <td>TF</td>
       </tr>
       <tr>
         <td>nowrap</td>
         <td>nowrap</td>
-        <td>�Ƿ��ڴ˵�Ԫ���н��û��������ĵ��ı����ơ�Deprecated. Use styles instead.</td>
+        <td>是否在此单元格中禁用或启用正文的文本环绕。Deprecated. Use styles instead.</td>
         <td>TF</td>
       </tr>
       <tr>
         <td>rowspan</td>
         <td>number</td>
-        <td>ָ���˵�Ԫ��ɺ���������</td>
+        <td>指明此单元格可横跨的行数。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -126,7 +126,7 @@
             <li>row</li>
             <li>rowgroup</li>
           </ul></td>
-        <td>�涨�˵�Ԫ���Ƿ�Ϊ���²����ṩ��ͷ��Ϣ�������˵�Ԫ�����(row)�����ಿ�֣������˵�Ԫ�����(col)�����ಿ�֣������˵�Ԫ�������(rowgroup)�����ಿ�֣������˵�Ԫ�������(colgroup)�����ಿ�֡�</td>
+        <td>规定此单元格是否为以下部分提供表头信息：包含此单元格的行(row)的其余部分，包含此单元格的列(col)的其余部分，包含此单元格的行组(rowgroup)的其余部分，包含此单元格的列组(colgroup)的其余部分。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -137,7 +137,7 @@
             <li>bottom</li>
             <li>baseline</li>
           </ul></td>
-        <td>�涨��Ԫ�����ݵĴ�ֱ����</td>
+        <td>规定单元格内容的垂直排列</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -146,22 +146,22 @@
             <li>pixels</li>
             <li>%</li>
           </ul></td>
-        <td>�涨����Ԫ��Ŀ��ȡ�Deprecated. Use styles instead.</td>
+        <td>规定表格单元格的宽度。Deprecated. Use styles instead.</td>
         <td>TF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
+    <h2>事件属性</h2>
     <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
 onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

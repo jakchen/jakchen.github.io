@@ -41,18 +41,18 @@ return ""
 <meta http-equiv="content-type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="global-2.css" rel="stylesheet" type="text/css" media="screen" />
-<title>html �¼�����</title>
+<title>html 事件属性</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>html �¼�����</h1>
+  <h1>html 事件属性</h1>
   <div id="intro">
-    <p><strong>html 4.0 ��������֮һ��ʹ html �¼�����������е���Ϊ���ȷ�˵���û����һ�� html Ԫ��ʱ����һ�� javascript�����¾��ǿɱ����� html ��ǩ�Զ����¼���Ϊ��һϵ�����ԡ�</strong></p>
+    <p><strong>html 4.0 的新特性之一是使 html 事件触发浏览器中的行为，比方说当用户点击一个 html 元素时启动一段 javascript。以下就是可被插入 html 标签以定义事件行为的一系列属性。</strong></p>
   </div>
   <div>
-    <h2>�����¼� (window events)</h2>
-    <p>���� body �� frameset Ԫ������Ч��</p>
+    <h2>窗口事件 (window events)</h2>
+    <p>仅在 body 和 frameset 元素中有效。</p>
     <table class="dataintable">
 			<colgroup>
 				<col width="25%" />
@@ -61,26 +61,26 @@ return ""
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 				</tr>
 			</thead>
       <tr>
         <td>onload</td>
-        <td>�ű�</td>
-        <td>���ĵ�������ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当文档被载入时执行脚本</td>
       </tr>
       <tr>
         <td>onunload</td>
-        <td>�ű�</td>
-        <td>���ĵ���ж��ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当文档被卸下时执行脚本</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>����Ԫ���¼� (form element events)</h2>
-    <p>���ڱ���Ԫ������Ч��</p>
+    <h2>表单元素事件 (form element events)</h2>
+    <p>仅在表单元素中有效。</p>
     <table class="dataintable">
 			<colgroup>
 				<col width="25%" />
@@ -89,46 +89,46 @@ return ""
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 				</tr>
 			</thead>
       <tr>
         <td>onchange</td>
-        <td>�ű�</td>
-        <td>��Ԫ�ظı�ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当元素改变时执行脚本</td>
       </tr>
       <tr>
         <td>onsubmit</td>
-        <td>�ű�</td>
-        <td>���������ύʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当表单被提交时执行脚本</td>
       </tr>
       <tr>
         <td>onreset</td>
-        <td>�ű�</td>
-        <td>������������ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当表单被重置时执行脚本</td>
       </tr>
       <tr>
         <td>onselect</td>
-        <td>�ű�</td>
-        <td>��Ԫ�ر�ѡȡʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当元素被选取时执行脚本</td>
       </tr>
       <tr>
         <td>onblur</td>
-        <td>�ű�</td>
-        <td>��Ԫ��ʧȥ����ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当元素失去焦点时执行脚本</td>
       </tr>
       <tr>
         <td>onfocus</td>
-        <td>�ű�</td>
-        <td>��Ԫ�ػ�ý���ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当元素获得焦点时执行脚本</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>�����¼� (keyboard events)</h2>
-    <p>������Ԫ������Ч��base��bdo��br��frame��frameset��head��html��iframe��meta��param��script��style �Լ� title Ԫ�ء�</p>
+    <h2>键盘事件 (keyboard events)</h2>
+    <p>在下列元素中无效：base、bdo、br、frame、frameset、head、html、iframe、meta、param、script、style 以及 title 元素。</p>
     <table class="dataintable">
 			<colgroup>
 				<col width="25%" />
@@ -137,31 +137,31 @@ return ""
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 				</tr>
 			</thead>
       <tr>
         <td>onkeydown</td>
-        <td>�ű�</td>
-        <td>�����̱�����ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当键盘被按下时执行脚本</td>
       </tr>
       <tr>
         <td>onkeypress</td>
-        <td>�ű�</td>
-        <td>�����̱����º����ɿ�ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当键盘被按下后又松开时执行脚本</td>
       </tr>
       <tr>
         <td>onkeyup</td>
-        <td>�ű�</td>
-        <td>�����̱��ɿ�ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当键盘被松开时执行脚本</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>����¼� (keyboard events)</h2>
-    <p>������Ԫ������Ч��base��bdo��br��frame��frameset��head��html��iframe��meta��param��script��style �Լ� title Ԫ�ء�</p>
+    <h2>鼠标事件 (keyboard events)</h2>
+    <p>在下列元素中无效：base、bdo、br、frame、frameset、head、html、iframe、meta、param、script、style 以及 title 元素。</p>
     <table class="dataintable">
 			<colgroup>
 				<col width="25%" />
@@ -170,45 +170,45 @@ return ""
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 				</tr>
 			</thead>
       <tr>
         <td>onclick</td>
-        <td>�ű�</td>
-        <td>����걻����ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标被单击时执行脚本</td>
       </tr>
       <tr>
         <td>ondblclick</td>
-        <td>�ű�</td>
-        <td>����걻˫��ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标被双击时执行脚本</td>
       </tr>
       <tr>
         <td>onmousedown</td>
-        <td>�ű�</td>
-        <td>����갴ť������ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标按钮被按下时执行脚本</td>
       </tr>
       <tr>
         <td>onmousemove</td>
-        <td>�ű�</td>
-        <td>�����ָ���ƶ�ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标指针移动时执行脚本</td>
       </tr>
       <tr>
         <td>onmouseout</td>
-        <td>�ű�</td>
-        <td>�����ָ���Ƴ�ĳԪ��ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标指针移出某元素时执行脚本</td>
       </tr>
       <tr>
         <td>onmouseover</td>
-        <td>�ű�</td>
-        <td>�����ָ����ͣ��ĳԪ��֮��ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标指针悬停于某元素之上时执行脚本</td>
       </tr>
       <tr>
         <td>onmouseup</td>
-        <td>�ű�</td>
-        <td>����갴ť���ɿ�ʱִ�нű�</td>
+        <td>脚本</td>
+        <td>当鼠标按钮被松开时执行脚本</td>
       </tr>
     </table>
   </div>

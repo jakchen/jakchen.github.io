@@ -4,30 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;tfoot&gt; ��ǩ</title>
+<title>HTML &lt;tfoot&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;tfoot&gt; ��ǩ</h1>
+  <h1>HTML &lt;tfoot&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>��������ҳ�ţ���ע����</p>
-    <p>thead��tfoot �Լ� tbody Ԫ��ʹ���������Ա����е��н��з��顣��������ĳ������ʱ����Ҳ��ϣ��ӵ��һ�������У�һЩ�������ݵ��У��Լ�λ�ڵײ���һ���ܼ��С����ֻ���ʹ�����������֧�ֶ����ڱ�������ҳ�ŵı������Ĺ����������ı��񱻴�ӡʱ������ı�ͷ��ҳ�ſɱ���ӡ�ڰ����������ݵ�ÿ��ҳ���ϡ�</p>
+    <h2>定义和用法</h2>
+    <p>定义表格的页脚（脚注）。</p>
+    <p>thead、tfoot 以及 tbody 元素使您有能力对表格中的行进行分组。当您创建某个表格时，您也许希望拥有一个标题行，一些带有数据的行，以及位于底部的一个总计行。这种划分使浏览器有能力支持独立于表格标题和页脚的表格正文滚动。当长的表格被打印时，表格的表头和页脚可被打印在包含表格数据的每张页面上。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
+    <h2>HTML 与 XHTML 之间的差异</h2>
     <p>NONE</p>
   </div>
   <div>
-    <h2>��ʾ��ע�ͣ�</h2>
-    <p class="note"><span>ע�ͣ�</span>&lt;thead&gt; �ڲ�����ӵ�� &lt;tr&gt; ��ǩ��</p>
-    <p class="note"><span>ע�ͣ�</span>�����ʹ�� thead��tfoot �Լ� tbody Ԫ�أ����ͱ���ʹ��ȫ����Ԫ�ء����ǵĳ��ִ����ǣ�thead��tfoot��tbody������������Ϳ������յ���������ǰ����ҳ���ˡ��������� table Ԫ���ڲ�ʹ����Щ��ǩ��</p>
-    <p class="note"><span>ע�ͣ�</span>&lt;thead&gt;��&lt;tbody&gt; �Լ� &lt;tfoot&gt; ���ٱ�ʹ�ã�������Ϊ���������֧�֡����������� XHTML ��δ���汾����������ᷢ���仯��</p>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>&lt;thead&gt; 内部必须拥有 &lt;tr&gt; 标签！</p>
+    <p class="note"><span>注释：</span>如果您使用 thead、tfoot 以及 tbody 元素，您就必须使用全部的元素。它们的出现次序是：thead、tfoot、tbody，这样浏览器就可以在收到所有数据前呈现页脚了。您必须在 table 元素内部使用这些标签。</p>
+    <p class="note"><span>注释：</span>&lt;thead&gt;、&lt;tbody&gt; 以及 &lt;tfoot&gt; 很少被使用，这是因为糟糕的浏览器支持。我们期望在 XHTML 的未来版本中这种情况会发生变化。</p>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="10%" />
@@ -37,9 +37,9 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
@@ -52,14 +52,14 @@
             <li>justify</li>
             <li>char</li>
           </ul></td>
-        <td>���嵥Ԫ���ڵ��ı����з�ʽ��</td>
+        <td>定义单元格内的文本排列方式。</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>char</td>
         <td>character</td>
-        <td>�涨�����ĸ��ַ��������ı����롣 <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�ã�</td>
+        <td>规定根据哪个字符来进行文本对齐。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -68,8 +68,8 @@
             <li>pixels</li>
             <li>%</li>
           </ul></td>
-        <td>�涨��һ�������ַ���ƫ������ <br />
-          ע�ͣ����� align=&quot;char&quot; ʱʹ�ã�</td>
+        <td>规定第一个对齐字符的偏移量。 <br />
+          注释：仅当 align=&quot;char&quot; 时使用！</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -80,22 +80,22 @@
             <li>bottom</li>
             <li>baseline</li>
           </ul></td>
-        <td>�涨��Ԫ���ڴ�ֱ���ı����з�ʽ��</td>
+        <td>规定单元格内垂直的文本排列方式。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
+    <h2>事件属性</h2>
     <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
 onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

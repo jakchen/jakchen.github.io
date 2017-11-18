@@ -4,24 +4,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;table&gt; ��ǩ</title>
+<title>HTML &lt;table&gt; 标签</title>
 </head>
 <body>
 
 <div class="maincontent">
-  <h1>HTML &lt;table&gt; ��ǩ</h1>
+  <h1>HTML &lt;table&gt; 标签</h1>
   <div>
-    <h2>������÷�</h2>
-    <p>&lt;table&gt; ��ǩ�ɶ�������� &lt;table&gt; ��ǩ�ڲ�������Է��ñ���ı��⡢�����С������С�����Ԫ�Լ������ı���</p>
+    <h2>定义和用法</h2>
+    <p>&lt;table&gt; 标签可定义表格。在 &lt;table&gt; 标签内部，你可以放置表格的标题、表格行、表格列、表格单元以及其他的表格。</p>
   </div>
   <div>
-    <h2>HTML �� XHTML ֮��Ĳ���</h2>
-    <p>�� HTML 4.01 �У�table Ԫ�ص� &quot;align&quot; �� &quot;bgcolor&quot; �����ǲ����޳�ʹ�õġ�</p>
-    <p>�� XHTML 1.0 Strict DTD��table Ԫ�ص� &quot;align&quot; �� &quot;bgcolor&quot; �����ǲ���֧�ֵġ�</p>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，table 元素的 &quot;align&quot; 和 &quot;bgcolor&quot; 属性是不被赞成使用的。</p>
+    <p>在 XHTML 1.0 Strict DTD，table 元素的 &quot;align&quot; 和 &quot;bgcolor&quot; 属性是不被支持的。</p>
   </div>
   <div>
-    <h2>��ѡ������</h2>
-    <p>DTD ָʾ���������������� DTD ��ʹ�á�S=Strict, T=Transitional, F=Frameset.</p>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
     <table class="dataintable">
       <colgroup>
 				<col width="15%" />
@@ -31,9 +31,9 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>����</th>
-					<th>ֵ</th>
-					<th>����</th>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
 					<th>DTD</th>
 				</tr>
 			</thead>
@@ -44,7 +44,7 @@
             <li>center</li>
             <li>right</li>
           </ul></td>
-        <td>���б��񡣲��޳�ʹ�á���ʹ����ʽȡ����֮��</td>
+        <td>排列表格。不赞成使用。请使用样式取而代之。</td>
         <td>TF</td>
       </tr>
       <tr>
@@ -54,14 +54,14 @@
             <li>#xxxxxx</li>
             <li>colorname</li>
           </ul></td>
-        <td>�涨����ı�����ɫ�����޳�ʹ�á���ʹ����ʽȡ����֮��</td>
+        <td>规定表格的背景颜色。不赞成使用。请使用样式取而代之。</td>
         <td>TF</td>
       </tr>
       <tr>
         <td>border</td>
         <td>pixels</td>
-        <td>�涨����߿�Ŀ��ȡ� <br />
-          ��ʾ����ͨ������ border=&quot;0&quot; ����ʾ�ޱ߿�ı���</td>
+        <td>规定表格边框的宽度。 <br />
+          提示：可通过设置 border=&quot;0&quot; 来显示无边框的表格！</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -70,7 +70,7 @@
             <li>pixels</li>
             <li>%</li>
           </ul></td>
-        <td>�涨��Ԫ������������֮��Ŀհס�</td>
+        <td>规定单元边沿与其内容之间的空白。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -79,7 +79,7 @@
             <li>pixels</li>
             <li>%</li>
           </ul></td>
-        <td>�涨��Ԫ��֮��Ŀհס�</td>
+        <td>规定单元格之间的空白。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -95,8 +95,8 @@
             <li>box</li>
             <li>border</li>
           </ul></td>
-        <td>�涨������Χ����һ��ı߿��ǿɼ��ġ� <br />
-          ע�ͣ�&quot;border&quot; ���Կ��� &quot;frame&quot; �������ʹ�ã����涨�߿�Ŀ��ȣ�</td>
+        <td>规定表格周围的哪一侧的边框是可见的。 <br />
+          注释：&quot;border&quot; 属性可与 &quot;frame&quot; 属性配合使用，来规定边框的宽度！</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -108,14 +108,14 @@
             <li>cols</li>
             <li>all</li>
           </ul></td>
-        <td>�涨ˮƽ��ֱ�ķֽ��ߡ� <br /> 
-          ע�ͣ������� &quot;border&quot; �������ʹ�ã�</td>
+        <td>规定水平或垂直的分界线。 <br /> 
+          注释：必须与 &quot;border&quot; 属性配合使用！</td>
         <td>STF</td>
       </tr>
       <tr>
         <td>summary</td>
         <td>text</td>
-        <td>Ϊ�����ϳ�/���Ӿ�������涨�����ժҪ��</td>
+        <td>为语音合成/非视觉浏览器规定表格的摘要。</td>
         <td>STF</td>
       </tr>
       <tr>
@@ -124,22 +124,22 @@
             <li>%</li>
             <li>pixels</li>
           </ul></td>
-        <td>�涨����Ŀ��ȡ�</td>
+        <td>规定表格的宽度。</td>
         <td>STF</td>
       </tr>
     </table>
   </div>
   <div>
-    <h2>��׼����</h2>
+    <h2>标准属性</h2>
     <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>���������������������<a href="html_ref_standardattributes.html">��׼����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
   </div>
   <div>
-    <h2>�¼�����</h2>
+    <h2>事件属性</h2>
     <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
 onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
 </pre>
-    <p>���������������������<a href="html_ref_eventattributes.html">�¼�����</a>��</p>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
   </div>
 </div>
 

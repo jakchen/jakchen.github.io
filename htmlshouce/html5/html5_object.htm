@@ -4,33 +4,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="author" content="colinivy" />
 <link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML 5 <object> ��ǩ</title>
+<title>HTML 5 <object> 标签</title>
 </head>
 <body>
 <div id=maincontent>
-<h1>HTML 5 &lt;object&gt; ��ǩ</h1>
+<h1>HTML 5 &lt;object&gt; 标签</h1>
 <div>
-<h2>������÷�</h2>
-<p>����һ��Ƕ��Ķ�����ʹ�ô�Ԫ�������� XHTML ҳ�����Ӷ�ý�塣��Ԫ���������涨���� HTML 
-�ĵ��еĶ�������ݺͲ������Լ���������ʾ�Ͳ������ݵĴ��롣</p></div>
+<h2>定义和用法</h2>
+<p>定义一个嵌入的对象。请使用此元素向您的 XHTML 页面添加多媒体。此元素运行您规定插入 HTML 
+文档中的对象的数据和参数，以及可用来显示和操作数据的代码。</p></div>
 <div>
-<h2>HTML 4.01 �� HTML 5 ֮��Ĳ���</h2>
-<p>����֧�� HTML 4.01 �е�һЩ���ԡ�</p></div>
+<h2>HTML 4.01 与 HTML 5 之间的差异</h2>
+<p>不再支持 HTML 4.01 中的一些属性。</p></div>
 <div>
-<h2>��ʾ��ע��</h2>
-<P class=note><SPAN>ע�ͣ�</SPAN>object Ԫ�ؿ�λ���� head Ԫ�ػ� body Ԫ���ڲ���&lt;object&gt; �� 
-&lt;/object&gt; ֮����ı����滻�ı�����Բ�֧�ִ˱�ǩ���������&lt;param&gt; ��ǩ�ɶ������ڶ���� run-time 
-���á�</p>
-<P class=tip><SPAN>��ʾ��</SPAN>����ͼ����ʹ�� &lt;img&gt; ��ǩ���� &lt;object&gt; ��ǩ��</p>
-<P class=tip><SPAN>��ʾ��</SPAN>���ٱ��붨�� "data" �� "type" ����֮һ��</p></div>
+<h2>提示和注释</h2>
+<P class=note><SPAN>注释：</SPAN>object 元素可位于在 head 元素或 body 元素内部。&lt;object&gt; 与 
+&lt;/object&gt; 之间的文本是替换文本，针对不支持此标签的浏览器。&lt;param&gt; 标签可定义用于对象的 run-time 
+设置。</p>
+<P class=tip><SPAN>提示：</SPAN>至于图像，请使用 &lt;img&gt; 标签代替 &lt;object&gt; 标签。</p>
+<P class=tip><SPAN>提示：</SPAN>至少必须定义 "data" 和 "type" 属性之一。</p></div>
 <div>
-<h2>����</h2>
+<h2>属性</h2>
 <table class=dataintable>
   <tbody>
   <tr>
-    <th>����</th>
-    <th>ֵ</th>
-    <th>����</th>
+    <th>属性</th>
+    <th>值</th>
+    <th>描述</th>
     <th>4</th>
     <th>5</th></tr>
   <tr>
@@ -41,43 +41,43 @@
         <li>right 
         <li>top 
         <li>bottom </li></ul></td>
-    <td>����Χ�Ƹö�����ı����뷽ʽ����֧�֡�ʹ�� CSS ���档</td>
+    <td>定义围绕该对象的文本对齐方式。不支持。使用 CSS 代替。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>archive</td>
     <td><I>URL</I></td>
-    <td>һ���ո�ָ���ָ�򵵰��ļ��� URL �б�����Щ�����ļ��������������ص���Դ����֧�֡�</td>
+    <td>一个空格分隔的指向档案文件的 URL 列表。这些档案文件包含了与对象相关的资源。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>border</td>
     <td><I>pixels</I></td>
-    <td>���������Χ�ı߿򡣲�֧�֡�ʹ�� CSS ���档</td>
+    <td>定义对象周围的边框。不支持。使用 CSS 代替。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>classid</td>
     <td><I>class ID</I></td>
-    <td>����ָ��������а����Ķ����λ�á���֧�֡�</td>
+    <td>用于指定浏览器中包含的对象的位置。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>codebase</td>
     <td><I>URL</I></td>
-    <td>�����ںδ����ҵ���������Ĵ��롣��֧�֡�</td>
+    <td>定义在何处可找到对象所需的代码。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>codetype</td>
     <td><I>MIME type</I></td>
-    <td>ͨ�� classid ���������õĴ���� MIME ���͡���֧�֡�</td>
+    <td>通过 classid 属性所引用的代码的 MIME 类型。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>data</td>
     <td><I>URL</I></td>
-    <td>�������ö������ݵ� URL��</td>
+    <td>定义引用对象数据的 URL。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
@@ -86,67 +86,67 @@
       <ul>
         <li>true 
         <li>false </li></ul></td>
-    <td>�ɶ���˶�����ɱ������������ܱ���������ʾ��ֱ���˶���õ�Ӧ��Ϊֹ����֧�֡�</td>
+    <td>可定义此对象仅可被声明，但不能被创建或例示，直到此对象得到应用为止。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>height</td>
     <td><I>pixels</I></td>
-    <td>�������ĸ߶ȡ�</td>
+    <td>定义对象的高度。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>hspace</td>
     <td><I>pixels</I></td>
-    <td>���������Χˮƽ����Ŀհס���֧�֡�ʹ�� CSS ���档</td>
+    <td>定义对象周围水平方向的空白。不支持。使用 CSS 代替。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>name</td>
     <td><I>unique_name</I></td>
-    <td>Ϊ������Ψһ�����ƣ��Ա��ڽű���ʹ�ã�����֧�֡�ʹ�� id ���档</td>
+    <td>为对象定义唯一的名称（以便在脚本中使用）。不支持。使用 id 代替。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>standby</td>
     <td><I>text</I></td>
-    <td>���嵱�������ڼ���ʱ����ʾ���ı�����֧�֡�</td>
+    <td>定义当对象正在加载时所显示的文本。不支持。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>type</td>
     <td><I>MIME_type</I></td>
-    <td>���屻�涨�� data ������ָ�����ļ��г��ֵ����ݵ� MIME ���͡�</td>
+    <td>定义被规定在 data 属性中指定的文件中出现的数据的 MIME 类型。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>usemap</td>
     <td><I>URL</I></td>
-    <td>�涨�����һͬʹ�õĿͻ���ͼ��ӳ��� URL��</td>
+    <td>规定与对象一同使用的客户端图像映射的 URL。</td>
     <td>4</td>
     <td>5</td></tr>
   <tr>
     <td>vspace</td>
     <td><I>pixels</I></td>
-    <td>�������Ĵ�ֱ����Ŀհס���֧�֡�ʹ�� CSS ���档</td>
+    <td>定义对象的垂直方向的空白。不支持。使用 CSS 代替。</td>
     <td>4</td>
     <td>&nbsp;</td></tr>
   <tr>
     <td>width</td>
     <td><I>pixels</I></td>
-    <td>�������Ŀ��ȡ�</td>
+    <td>定义对象的宽度。</td>
     <td>4</td>
     <td>5</td></tr></tbody></table>
-<h3>��׼����</h3><pre>class, contenteditable, contextmenu, dir, draggable, id, irrelevant, 
+<h3>标准属性</h3><pre>class, contenteditable, contextmenu, dir, draggable, id, irrelevant, 
 lang, ref, registrationmark, tabindex, template, title</pre>
-<p>��������������������� <a href="html5_ref_standardattributes.htm">HTML 5 �б�׼����</a>��</p>
-<h3>�¼�����</h3><pre>onabort, onbeforeunload, onblur, onchange, onclick, oncontextmenu, 
+<p>如需完整的描述，请访问 <a href="html5_ref_standardattributes.htm">HTML 5 中标准属性</a>。</p>
+<h3>事件属性</h3><pre>onabort, onbeforeunload, onblur, onchange, onclick, oncontextmenu, 
 ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, 
 ondragstart, ondrop, onerror, onfocus, onkeydown, onkeypress, onkeyup, 
 onload, onmessage, onmousedown, onmousemove, onmouseover, onmouseout, 
 onmouseup, onmousewheel, onresize, onscroll, onselect, onsubmit, onunload
 </pre>
-<p>��������������������� <a href="html5_ref_eventattributes.htm">HTML 5 
-���¼�����</a>��</p></div></div>
+<p>如需完整的描述，请访问 <a href="html5_ref_eventattributes.htm">HTML 5 
+中事件属性</a>。</p></div></div>
 
 </body></html>
