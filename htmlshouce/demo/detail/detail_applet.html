@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML &lt;applet&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>HTML &lt;applet&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>定义一个嵌入的 applet。</p>
+  </div>
+  <div>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，applet 元素不被赞成使用。</p>
+    <p>在 XHTML 1.0 Strict DTD 中，applet 元素不被支持。</p>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p class="tip"><span>提示：</span>如需包含 applet，请尽可能地使用 object 元素（因为在 XHTML 1.0 Strict DTD 中，applet 元素不被支持）。</p>
+  </div>
+  <div>
+    <h2>必需的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
+    <table class="dataintable">
+      <colgroup>
+				<col width="13%" />
+				<col width="17%" />
+				<col width="65%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>height</td>
+        <td>pixels</td>
+        <td>定义 applet 的高度</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td>pixels</td>
+        <td>定义 applet 的宽度</td>
+        <td>TF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <table class="dataintable">
+      <colgroup>
+				<col width="13%" />
+				<col width="17%" />
+				<col width="65%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>align</td>
+        <td><ul>
+            <li>left</li>
+            <li>right</li>
+            <li>top</li>
+            <li>bottom</li>
+            <li>middle</li>
+            <li>baseline</li>
+            <li>texttop</li>
+            <li>absmiddle</li>
+            <li>absbottom</li>
+          </ul></td>
+        <td>定义围绕 applet 的文本排列方式。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>alt</td>
+        <td>text</td>
+        <td>假如浏览器支持 applet，但无法运行此 applet 时，被显示的替换文本。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>archive</td>
+        <td>URL</td>
+        <td>当 applet 被存储在某个 JAVA 档案文件或 ZIP 文件中时，此 applet 的 URL。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>code</td>
+        <td>URL</td>
+        <td>执行 applet 的 class 的 URL。</td>
+        <td>TF </td>
+      </tr>
+      <tr>
+        <td>codebase</td>
+        <td>URL</td>
+        <td>指示 applet 的基准 URL，假如 code 属性是相对的。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>hspace</td>
+        <td>pixels</td>
+        <td>定义围绕 applet 的水平间隔。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>unique_name</td>
+        <td>定义针对 applet 的唯一名称（用在脚本中的）。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>object</td>
+        <td>name</td>
+        <td>定义了包含该 applet 的一系列版本的资源名称。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>text</td>
+        <td>在工具提示中显示的附加信息。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td>vspace</td>
+        <td>pixels</td>
+        <td>定义围绕 applet 的垂直间隔。</td>
+        <td>TF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>id, class, title, style, dir, lang, xml:lang</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+  <div>
+    <h2>事件属性</h2>
+    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
+onmousemove, onmouseout, onkeypress, onkeydown, onkeyup 
+</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+</html>

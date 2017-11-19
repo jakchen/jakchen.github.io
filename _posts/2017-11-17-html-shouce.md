@@ -8,4 +8,4 @@ author: jakchen
 * content
 {:toc}
 
-[HTML标签参考手册](htmlshouce)
+[HTML标签参考手册]({{ site.url }}/htmlshouce)

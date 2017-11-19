@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML &lt;script&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>HTML &lt;script&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>定义一段诸如 JavaScript 的脚本。</p>
+  </div>
+  <div>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>在 HTML 4.01 中，script 元素的 &quot;language&quot; 属性不被赞成使用。</p>
+    <p>在 XHTML 1.0 Strict DTD 中，script 元素的 &quot;language&quot; 属性不被支持。</p>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>假如此元素内部的代码没有位于某个函数中，那么这些代码会在页面被加载时被立即执行。&lt;frameset&gt; 标签之后的脚本会被忽略。</p>
+  </div>
+  <div>
+    <h2>例子</h2>
+    <pre>
+<code>&lt;script type=&quot;text/javascript&quot;&gt;</code>
+  document.write(&quot;Hello World!&quot;)
+<code>&lt;/script&gt;</code>
+</pre>
+  </div>
+  <div>
+    <h2>必选的属性</h2>
+    <table class="dataintable">
+      <colgroup>
+				<col width="15%" />
+				<col width="25%" />
+				<col width="55%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td><a href="http://t.mb5u.com/html/detail/detail_script_prop.html#type_language">type</a></td>
+        <td><ul>
+            <li>text/ecmascript</li>
+            <li>text/javascript</li>
+            <li>application/ecmascript</li>
+            <li>application/javascript</li>
+            <li>text/vbscript</li>
+          </ul></td>
+        <td>指示脚本的 MIME 类型。<a href="http://t.mb5u.com/html/detail/detail_script_prop.html#type_language">有关 type 属性的详细信息</a>。</td>
+        <td>STF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <table class="dataintable">
+      <colgroup>
+				<col width="15%" />
+				<col width="25%" />
+				<col width="55%" />
+				<col width="5%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td><a href="http://t.mb5u.com/html/detail/detail_script_prop.html#src_charset">charset</a></td>
+        <td>charset</td>
+        <td>定义用在脚本中的字符编码。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td><a href="http://t.mb5u.com/html/detail/detail_script_prop.html#src_charset">defer</a></td>
+        <td>defer</td>
+        <td>指示脚本不会生成任何的文档内容。浏览器可以继续解析并绘制页面。</td>
+        <td>STF</td>
+      </tr>
+      <tr>
+        <td><a href="http://t.mb5u.com/html/detail/detail_script_prop.html#type_language">language</a></td>
+        <td><ul>
+            <li>javascript</li>
+            <li>livescript</li>
+            <li>vbscript</li>
+            <li>other</li>
+          </ul></td>
+        <td>规定脚本语言。不赞成使用。请使用 type 属性代替它。</td>
+        <td>TF</td>
+      </tr>
+      <tr>
+        <td><a href="http://t.mb5u.com/html/detail/detail_script_prop.html#src_charset">src</a></td>
+        <td>URL</td>
+        <td>定义指向包含脚本的文件的 URL（这样您就可以引用某个包含脚本的文件，而不是直接把脚本插入您的 HTML 文档中）。</td>
+        <td>STF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>xml:space</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+  <div>
+    <h2>事件属性</h2>
+    <pre>NONE</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+</html>

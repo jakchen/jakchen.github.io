@@ -180,3 +180,22 @@ Doyoe.util = {
 		return rd;
 	}
 };
+
+// 双击打开链接
+window.onload=function(){
+  var oNav = document.getElementById("navigation")
+  //alert(oNav);
+  var aLink = oNav.getElementsByTagName("a");
+  var oIframe = document.getElementById("archives");
+  var txt;
+  var a = new Array();
+  for (var i = 0; i<aLink.length; i++) {
+    aLink[i].ondblclick=function(){
+    txt = this.href;
+    a = txt.split("/");
+    txt = "http://127.0.0.1:4000/htmlshouce/demo/detail/"+a[a.length-1];
+    //alert(txt);
+    oIframe.src=txt;
+    }
+  }
+}

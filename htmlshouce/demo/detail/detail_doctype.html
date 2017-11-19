@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
+</head>
+<body>
+<pre><code class="hljs xml">
+HTML 4.01 规定了三种文档类型：Strict、Transitional 以及 Frameset。:
+
+HTML Strict DTD
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "
+  http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+HTML Transitional DTD
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+  http://www.w3.org/TR/html4/loose.dtd"&gt;
+
+Frameset DTD
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "
+  http://www.w3.org/TR/html4/frameset.dtd"&gt;
+</code></pre>
+<pre><code class="hljs xml">
+XHTML 1.0 规定了三种 XML 文档类型：Strict、Transitional 以及 Frameset。:
+
+XHTML Strict DTD
+&lt;!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+XHTML Transitional DTD
+&lt;!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+XHTML Frameset DTD
+&lt;!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+</code></pre>
+</body>
+</html>

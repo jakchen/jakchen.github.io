@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
+</head>
+<body>
+<pre><code class="hljs xml">
+&lt;p&gt;This is some text in a very short paragraph&lt;/p&gt;
+</code></pre>
+<p>This is some text in a very short paragraph</p>
+</body>
+</html>

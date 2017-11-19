@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="colinivy" />
+<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
+<title>HTML &lt;blockquote&gt; 标签</title>
+</head>
+<body>
+
+<div class="maincontent">
+  <h1>HTML &lt;blockquote&gt; 标签</h1>
+  <div>
+    <h2>定义和用法</h2>
+    <p>&lt;blockquote&gt; 标签可定义一个块引用。</p>
+    <p>&lt;blockquote&gt; 与 &lt;blockquote&gt; 之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进，而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
+  </div>
+  <div>
+    <h2>HTML 与 XHTML 之间的差异</h2>
+    <p>应当在 &lt;blockquote&gt; 标签中仅仅包含块级元素，而不仅仅是纯文本。</p>
+    <p>如需把页面作为 strict XHTML 进行验证，您就必须在 &lt;blockquote&gt; 标签内容添加块级元素，比如这样：</p>
+    <pre>
+&lt;blockquote&gt;
+&lt;p&gt;here is a long quotation here is a long quotation&lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+  </div>
+  <div>
+    <h2>提示和注释：</h2>
+    <p class="note"><span>注释：</span>blockquote 元素会在文本的两端经常会缩进。</p>
+  </div>
+  <div>
+    <h2>可选的属性</h2>
+    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, and F=Frameset.</p>
+    <table class="dataintable">
+			<colgroup>
+				<col width="10%" />
+				<col width="10%" />
+				<col width="70%" />
+				<col width="10%" />
+			</colgroup>
+      <thead>
+				<tr>
+					<th>属性</th>
+					<th>值</th>
+					<th>描述</th>
+					<th>DTD</th>
+				</tr>
+			</thead>
+      <tr>
+        <td>cite</td>
+        <td>URL</td>
+        <td>指示引用的来源。该属性的值是一个包含在引号中并指向联机文档的 URL，以及（如果有可能的话）引用在该文档中的确切位置。</td>
+        <td>STF</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>标准属性</h2>
+    <pre>id, class, title, style, dir, lang, xml:lang</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
+  </div>
+  <div>
+    <h2>事件属性</h2>
+    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
+onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
+</pre>
+    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
+  </div>
+</div>
+
+<p class="copyright"></p></body>
+</html>
