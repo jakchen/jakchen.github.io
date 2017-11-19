@@ -193,7 +193,7 @@ window.onload=function(){
     aLink[i].ondblclick=function(){
     txt = this.href;
     a = txt.split("/");
-    txt = "http://127.0.0.1:4000/htmlshouce/demo/detail/"+a[a.length-1];
+    txt = "http://jakchen.github.io/htmlshouce/demo/detail/"+a[a.length-1];
     //alert(txt);
     oIframe.src=txt;
     }
