@@ -1,31 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;li&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
+  <style>
+ul li {
+    display: list-item;
+    list-style: disc}
+ol li {
+    display: list-item;
+    list-style: decimal;}
+  </style>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;li&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>&lt;li&gt; 标签定义了列表项目。&lt;li&gt; 标签可用在有序列表 (&lt;ol&gt;) 和无序列表 (&lt;ul&gt;) 中。</p>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>在 HTML 4.01 中，li 元素的 &quot;type&quot; 和 &quot;value&quot; 属性是不被赞成使用的。</p>
-    <p>在 XHTML 1.0 Strict DTD 中，li 元素的 &quot;type&quot; 和 &quot;value&quot; 属性是不被支持的。</p>
-  </div>
-  <div>
-    <h2>提示和注释：</h2>
-    <p class="note"><span>注释：</span>请使用<em>样式</em>来定义列表的类型。</p>
-  </div>
-  <div>
-    <h2>例子</h2>
-    <pre>
+<pre><code class="hljs xml">
+&lt;h1&gt;这是标题 1&lt;/h1&gt;
 &lt;ol&gt;
    &lt;li&gt;Coffee&lt;/li&gt;
    &lt;li&gt;Tea&lt;/li&gt;
@@ -34,62 +43,14 @@
    &lt;li&gt;Coffee&lt;/li&gt;
    &lt;li&gt;Tea&lt;/li&gt;
 &lt;/ul&gt;
-</pre>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="10%" />
-				<col width="15%" />
-				<col width="70%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>type</td>
-        <td><ul>
-            <li>A</li>
-            <li>a</li>
-            <li>I</li>
-            <li>i</li>
-            <li>1</li>
-            <li>disc</li>
-            <li>square</li>
-            <li>circle</li>
-          </ul></td>
-        <td>规定列表的类型。不赞成使用。请使用样式替代。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>value</td>
-        <td>number_of_list_item</td>
-        <td>不赞成使用。请使用样式替代。</td>
-        <td>TF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+</code></pre>
+<ol>
+   <li>Coffee</li>
+   <li>Tea</li>
+</ol>
+<ul>
+   <li>Coffee</li>
+   <li>Tea</li>
+</ul>
+</body>
 </html>

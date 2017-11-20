@@ -1,70 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;em&gt; &lt;strong&gt; &lt;dfn&gt; &lt;code&gt; &lt;samp&gt; &lt;kbd&gt;&lt;var&gt; &lt;cite&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;em&gt; &lt;strong&gt; &lt;dfn&gt; &lt;code&gt; &lt;samp&gt; &lt;kbd&gt;&lt;var&gt; &lt;cite&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p><strong>以下元素都是短语元素。虽然这些标签定义的文本大多会呈现出特殊的样式，但实际上，这些标签都拥有确切的语义。</strong></p>
-    <p><strong>我们并不反对使用它们，但是如果您只是为了达到某种视觉效果而使用这些标签的话，我们建议您使用样式表，那么做会达到更加丰富的效果。</strong></p>
-    <table class="dataintable">
-      <tr>
-        <td>&lt;em&gt;</td>
-        <td>把文本定义为强调的内容。</td>
-      </tr>
-      <tr>
-        <td>&lt;strong&gt;</td>
-        <td>把文本定义为语气<em>更强</em>的强调的内容。</td>
-      </tr>
-      <tr>
-        <td>&lt;dfn&gt;</td>
-        <td>定义一个定义项目。</td>
-      </tr>
-      <tr>
-        <td>&lt;code&gt;</td>
-        <td>定义计算机代码文本。</td>
-      </tr>
-      <tr>
-        <td>&lt;samp&gt;</td>
-        <td>定义样本文本。</td>
-      </tr>
-      <tr>
-        <td>&lt;kbd&gt;</td>
-        <td>定义键盘文本。它表示文本是从键盘上键入的。它经常用在与计算机相关的文档或手册中。</td>
-      </tr>
-      <tr>
-        <td>&lt;var&gt;</td>
-        <td>定义变量。您可以将此标签与 &lt;pre&gt; 及 &lt;code&gt; 标签配合使用。</td>
-      </tr>
-      <tr>
-        <td>&lt;cite&gt;</td>
-        <td>定义引用。可使用该标签对参考文献的引用进行定义，比如书籍或杂志的标题。</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>无</p>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown, onkeyup</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;em&gt;把文本定义为强调的内容。&lt;/em&gt;
+</code></pre>
+<em>把文本定义为强调的内容。</em>
+<hr>
+<pre><code class="hljs xml">
+&lt;code&gt;定义计算机代码文本。&lt;/code&gt;
+</code></pre>
+<code>定义计算机代码文本。</code>
+<hr>
+<pre><code class="hljs xml">
+&lt;kbd&gt;定义键盘文本。&lt;/kbd&gt;
+</code></pre>
+<kbd>定义键盘文本。</kbd>
+<hr>
+<pre><code class="hljs xml">
+&lt;var&gt;定义变量&lt;/var&gt;
+</code></pre>
+<var>定义变量。</var>
+<hr>
+<pre><code class="hljs xml">
+&lt;dfn&gt;定义一个定义项目。表示术语的一个定义。&lt;/dfn&gt;
+</code></pre>
+<dfn>定义一个定义项目。表示术语的一个定义。</dfn>
+<hr>
+<pre><code class="hljs xml">
+&lt;samp&gt;定义样本文本。&lt;/samp&gt;
+</code></pre>
+<samp>定义样本文本。用于标识计算机程序输出，通常使用浏览器缺省的 monotype 字体（例如 Lucida Console）。</samp>
+<hr>
+<pre><code class="hljs xml">
+&lt;cite&gt;定义引用。&lt;/cite&gt;
+</code></pre>
+<cite>定义引用。</cite>
+</body>
 </html>

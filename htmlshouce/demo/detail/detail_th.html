@@ -1,169 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;th&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;th&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>定义表格内的表头单元格。此 th 元素内部的文本通常会呈现为粗体。</p>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>在 HTML 4.01 中，th 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 属性是不被赞成使用的。</p>
-    <p>在 XHTML 1.0 Strict DTD 中，th 元素的 &quot;bgcolor&quot;、&quot;height&quot;、&quot;width&quot; 以及 &quot;nowrap&quot; 属性是不被支持。</p>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="10%" />
-				<col width="20%" />
-				<col width="65%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>abbr</td>
-        <td>abbr_text</td>
-        <td>规定一个单元格中内容的缩写版本。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>align
-        <td><ul>
-          <li>left</li>
-          <li>right</li>
-          <li>center</li>
-          <li>justify</li>
-          <li>char</li>
-          <ul>
-        </td>
-        <td>规定单元格内容的水平排列方式。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>axis</td>
-        <td>category_names</td>
-        <td>为单元格定义一个名称。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>bgcolor</td>
-        <td><ul>
-            <li>rgb(x,x,x)</li>
-            <li>#xxxxxx</li>
-            <li>colorname</li>
-          </ul></td>
-        <td>规定表格单元格的背景颜色。不赞成使用，请使用样式替代它。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>char</td>
-        <td>character</td>
-        <td>规定哪个字符是最齐的中心线，例如将十进制数字对齐。 <br />
-          注释：仅当 align=&quot;char&quot; 时使用。</td>
-        <td>STF</td>
-      <tr>
-        <td>charoff</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>规定每行对齐字符第一次出现的偏移量，如果一行中不包含对齐字符，应该水平平移到对齐位置的最后。 <br />
-          注释：仅当 align=&quot;char&quot; 时使用。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>colspan</td>
-        <td>number</td>
-        <td>指明此单元格可横跨的列数</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>headers</td>
-        <td>header_cells'_id</td>
-        <td>一个空格分隔的单元格ID列表，这些ID可为单元格提供表头的信息。此属性允许纯文本的浏览器为某个给定的单元格呈现表头信息。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td>pixels</td>
-        <td>规定表格单元格的高度。Deprecated. Use styles instead.</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>nowrap</td>
-        <td>nowrap</td>
-        <td>是否在此单元格中禁用或启用正文的文本环绕。Deprecated. Use styles instead.</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>rowspan</td>
-        <td>number</td>
-        <td>指明此单元格可横跨的行数。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>scope</td>
-        <td><ul>
-            <li>col</li>
-            <li>colgroup</li>
-            <li>row</li>
-            <li>rowgroup</li>
-          </ul></td>
-        <td>规定此单元格是否为以下部分提供表头信息：包含此单元格的行(row)的其余部分，包含此单元格的列(col)的其余部分，包含此单元格的行组(rowgroup)的其余部分，包含此单元格的列组(colgroup)的其余部分。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>valign</td>
-        <td><ul>
-            <li>top</li>
-            <li>middle</li>
-            <li>bottom</li>
-            <li>baseline</li>
-          </ul></td>
-        <td>规定单元格内容的垂直排列</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>规定表格单元格的宽度。Deprecated. Use styles instead.</td>
-        <td>TF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;table border="1"&gt;
+  &lt;caption&gt;表格标题&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th colspan="2"&gt;表头1&lt;/th&gt;
+    &lt;th rowspan="2"&gt;表头2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cell A&lt;/td&gt;
+    &lt;td&gt;Cell B&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<table border="1">
+  <caption>表格标题</caption>
+  <tr>
+    <th colspan="2">表头1</th>
+    <th rowspan="2">表头2</th>
+  </tr>
+  <tr>
+    <td>Cell A</td>
+    <td>Cell B</td>
+  </tr>
+</table>
+</body>
 </html>

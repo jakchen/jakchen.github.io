@@ -1,128 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;iframe&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;iframe&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>iframe 元素会创建一个包含另外一个文档的内联框架。</p>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>NONE</p>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="15%" />
-				<col width="15%" />
-				<col width="65%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>align</td>
-        <td><ul>
-            <li>left</li>
-            <li>right</li>
-            <li>top</li>
-            <li>middle</li>
-            <li>bottom</li>
-          </ul></td>
-        <td>规定如何根据周围的文本来排列此框架。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>frameborder</td>
-        <td><ul>
-            <li>1</li>
-            <li>0</li>
-          </ul></td>
-        <td>规定是否显示框架的边框。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>定义 iframe 的高度。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>longdesc</td>
-        <td>URL</td>
-        <td>描述此框架内容的长描述的URL。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>marginheight</td>
-        <td>pixels</td>
-        <td>定义 iframe 的顶部和底部的边距。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>marginwidth</td>
-        <td>pixels</td>
-        <td>定义 iframe 的左侧和右侧的边距。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>name</td>
-        <td>frame_name</td>
-        <td>规定 iframe 的唯一名称 （以便在脚本中使用）。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>scrolling</td>
-        <td><ul>
-            <li>yes</li>
-            <li>no</li>
-            <li>auto</li>
-          </ul></td>
-        <td>定义滚动条。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>src</td>
-        <td>URL</td>
-        <td>在 iframe 中显示文档的 URL。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>定义 iframe 的宽度。</td>
-        <td>TF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;a href="http://www.weibo.com" target="window"&gt;在框架中打开微博&lt;/a&gt;
+&lt;iframe src="http://www.baidu.com" frameborder="0"
+width="100%" height="500px" name="window"&gt;这是标题 1&lt;/iframe&gt;
+</code></pre>
+<a href="http://www.weibo.com" target="window">在框架中打开微博</a>
+<iframe src="http://www.baidu.com" width="100%" height="500px" name="window"></iframe>
+</body>
 </html>

@@ -1,58 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;tt&gt; &lt;i&gt; &lt;b&gt; &lt;big&gt; &lt;small&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;tt&gt; &lt;i&gt; &lt;b&gt; &lt;big&gt; &lt;small&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p><strong>以下的元素均是字体样式元素.它们不被赞成使用,通过使用样式表会取得更加多样的效果。</strong></p>
-    <table class="dataintable">
-      <tr>
-        <td>&lt;tt&gt;</td>
-        <td>呈现类似打字机或者等宽的文本效果。</td>
-      </tr>
-      <tr>
-        <td>&lt;i&gt;</td>
-        <td>显示斜体文本效果。</td>
-      </tr>
-      <tr>
-        <td>&lt;b&gt;</td>
-        <td>呈现粗体文本效果。</td>
-      </tr>
-      <tr>
-        <td>&lt;big&gt;</td>
-        <td>呈现大号字体效果。</td>
-      </tr>
-      <tr>
-        <td>&lt;small&gt;</td>
-        <td>呈现小号字体效果。</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>无。</p>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown onkeyup
-</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;b&gt;呈现粗体文本效果。&lt;/b&gt;
+&lt;i&gt;显示斜体文本效果。&lt;/i&gt;
+</code></pre>
+<b>呈现粗体文本效果。</b>
+<i>显示斜体文本效果。</i>
+</body>
 </html>

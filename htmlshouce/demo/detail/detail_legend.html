@@ -1,77 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;legend&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;legend&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>legend 元素可为 fieldset 定义一个标题。</p>
-  </div>
-  <div>
-    <h2>实例</h2>
-    <pre>&lt;fieldset&gt;
-<code>&lt;legend&gt;Health information:&lt;/legend&gt;</code>
+<pre><code class="hljs xml">
+&lt;fieldset&gt;
+&lt;legend&gt;Health information:&lt;/legend&gt;
 &lt;form&gt;
-&lt;label&gt;Height: &lt;input type=&quot;text&quot; /&gt;&lt;/label&gt;
-&lt;label&gt;Weight: &lt;input type=&quot;text&quot; /&gt;&lt;/label&gt;
+&lt;label&gt;Height: &lt;input type="text" /&gt;&lt;/label&gt;
+&lt;label&gt;Weight: &lt;input type="text" /&gt;&lt;/label&gt;
 &lt;/form&gt;
-&lt;/fieldset&gt;</pre>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>在 HTML 4.01 中，align 属性不被赞成使用。</p>
-    <p>在 XHTML 1.0 Strict DTD 中，align 属性不被支持。</p>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="10%" />
-				<col width="15%" />
-				<col width="70%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-        <td>align</td>
-        <td><ul>
-            <li>top</li>
-            <li>bottom</li>
-            <li>left</li>
-            <li>right</li>
-          </ul></td>
-        <td>为 fieldset 中的内容定义排列方式。默认值是 Top。</td>
-        <td>TF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang, xml:lang</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>accesskey, onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+&lt;/fieldset&gt;
+</code></pre>
+<fieldset>
+<legend>Health information:</legend>
+<form>
+<label>Height: <input type="text" /></label>
+<label>Weight: <input type="text" /></label>
+</form>
+</fieldset>
+</body>
 </html>

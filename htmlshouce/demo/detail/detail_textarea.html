@@ -1,116 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;textarea&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;textarea&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>定义一个文本区域 (text-area) （一个多行的文本输入区域）。用户可在此文本区域中写文本。在一个文本区中，您可输入无限数量的文本。文本区中的默认字体是等宽字体 (fixed pitch)。</p>
-    <p class="note"><span>注释：</span>在文本输入区内的文本行间，用 &quot;%OD%OA&quot; （回车/换行）进行分隔。</p>
-    <p class="tip"><span>提示：</span>可以通过 &lt;textarea&gt; 标签的 wrap 属性设置文本输入区内的换行模式。<a href="detail_textarea_prop_wrap.html">有关 wrap 属性的详细信息</a>。</p>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>NONE</p>
-  </div>
-  <div>
-    <h2>例子</h2>
-    <pre>
-&lt;textarea rows=&quot;3&quot; cols=&quot;30&quot;&gt;
-这里是文本域中的文本 ... ... ... ...
-&lt;/textarea&gt;
-</pre>
-  </div>
-  <div>
-    <h2>必需的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="12%" />
-				<col width="23%" />
-				<col width="60%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>cols</td>
-        <td>number</td>
-        <td>规定文本区内可见的列数。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>rows</td>
-        <td>number</td>
-        <td>规定文本区内可见的行数。</td>
-        <td>STF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD指示此属性允许在哪种DTD中使用。S=Strict, T=Transitional, and F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="12%" />
-				<col width="23%" />
-				<col width="60%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>disabled</td>
-        <td>disabled</td>
-        <td>当此文本区首次加载时禁用此文本区。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>name</td>
-        <td>name_of_textarea</td>
-        <td>为此文本区规定一个名称。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>readonly</td>
-        <td>readonly</td>
-        <td>指明用户无法修改文本区内的内容。</td>
-        <td>STF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, dir, lang, xml:lang, tabindex, accesskey</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。</p>
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onfocus, onblur, onselect, onchange, onclick, ondblclick, onmousedown,
- onmouseup, onmouseover, onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-</pre>
-    <p>如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。</p>
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;textarea name="textarea" cols="30" rows="10"&gt;
+这里是文本域中的文本 ... ... ... ...&lt;/textarea&gt;
+</code></pre>
+<textarea name="textarea" cols="30" rows="10">
+这里是文本域中的文本 ... ... ... ...</textarea>
+</body>
 </html>

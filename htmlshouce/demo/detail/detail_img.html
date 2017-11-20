@@ -1,168 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="colinivy" />
-<link href="../global.css" rel="stylesheet" type="text/css" media="screen" />
-<title>HTML &lt;img&gt; 标签</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <link rel="stylesheet" href="style/line-number.css">
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1;
+            var $numbering = $('<ul/>').addClass('pre-numbering');
+            $(this)
+                .addClass('has-numbering')
+                .parent()
+                .append($numbering);
+            for(i=1;i<=lines-1;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+    });
+  </script>
 </head>
 <body>
-
-<div class="maincontent">
-  <h1>HTML &lt;img&gt; 标签</h1>
-  <div>
-    <h2>定义和用法</h2>
-    <p>img 元素可定义一副图像。</p>
-  </div>
-  <div>
-    <h2>HTML 与 XHTML 之间的差异</h2>
-    <p>在 HTML 中，&lt;img&gt; 标签没有结束标签。</p>
-    <p>在 XHTML 中，&lt;img&gt; 标签必须被正确地关闭。</p>
-    <p>在 HTML 4.01 中，image 元素的&quot;align&quot;、&quot;border&quot;、&quot;hspace&quot; 以及 &quot;vspace&quot; 是不被赞成使用的。</p>
-    <p>在 XHTML 1.0 Strict DTD 中，image 元素的 &quot;align&quot;、&quot;border&quot;、&quot;hspace&quot; 以及 &quot;vspace&quot; 是不被支持的。</p>
-  </div>
-  <div>
-    <h2>Mozilla Firefox 和 alt 属性</h2>
-    <p>如果您在 Firefox 中使用 alt 属性，那么当鼠标悬浮在图片或图像地图时不会像其他的浏览器那样出现提示文本。</p>
-    <p>Firefox 使用 alt 属性的方式与此属性被预想的方式是一致的，比如假如图像没有载入时出现的替代文本，而不是 mouse-over 文本。</p>
-    <p>例如，&lt;img src=&quot;image.gif&quot; alt=&quot;bla&quot; title=&quot;bla bla bla&quot; /&gt;</p>
-  </div>
-  <div>
-    <h2>例子</h2>
-    <pre>&lt;img src=&quot;angry.gif&quot; alt=&quot;Angry&quot; /&gt;</pre>
-  </div>
-  <div>
-    <h2>必需的属性</h2>
-    <p>DTD指示此属性允许在哪种DTD中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="15%" />
-				<col width="10%" />
-				<col width="70%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>alt</td>
-        <td>text</td>
-        <td>定义图像的简短描述（即图像的替代文本）。不超过 1024 个字符。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>src</td>
-        <td>URL</td>
-        <td>所显示图像的 URL。</td>
-        <td>STF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>可选的属性</h2>
-    <p>DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.</p>
-    <table class="dataintable">
-      <colgroup>
-				<col width="15%" />
-				<col width="10%" />
-				<col width="70%" />
-				<col width="5%" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th>属性</th>
-					<th>值</th>
-					<th>描述</th>
-					<th>DTD</th>
-				</tr>
-			</thead>
-      <tr>
-        <td>align</td>
-        <td><ul>
-            <li>top</li>
-            <li>bottom</li>
-            <li>middle</li>
-            <li>left</li>
-            <li>right</li>
-          </ul></td>
-        <td>规定如何根据周围的文本来排列图像。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>border</td>
-        <td>pixels</td>
-        <td>定义图像周围的边框。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>定义图像的高度。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>hspace</td>
-        <td>pixels</td>
-        <td>定义图像左侧和右侧的空白。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td><a href="detail_img_prop_ismap_usemap.html" title="HTML &lt;img&gt; 标签的 ismap 和 usemap 属性">ismap</a></td>
-        <td>URL</td>
-        <td>定义作为服务器端图像映射的一幅图像。<a href="detail_img_prop_ismap_usemap.html" title="HTML &lt;img&gt; 标签的 ismap 和 usemap 属性">有关 ismap 属性的详细信息</a>。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>longdesc</td>
-        <td>URL</td>
-        <td>指向包含长的图像描述文档的 URL。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td><a href="detail_img_prop_ismap_usemap.html" title="HTML &lt;img&gt; 标签的 ismap 和 usemap 属性">usemap</a></td>
-        <td>URL</td>
-        <td>定义作为客户端图像映射的一幅图像。<a href="detail_img_prop_ismap_usemap.html" title="HTML &lt;img&gt; 标签的 ismap 和 usemap 属性">有关 usemap 属性的详细信息</a>。 <br />
-          请参阅 <a href="detail_map.html" title="HTML &lt;map&gt; 标签">&lt;map&gt;</a> 和 <a href="detail_area.html" title="HTML &lt;area&gt; 标签">&lt;area&gt;</a> 标签，以领会其工作原理。</td>
-        <td>STF</td>
-      </tr>
-      <tr>
-        <td>vspace</td>
-        <td>pixels</td>
-        <td>定义图像顶部和底部的空白。</td>
-        <td>TF</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td><ul>
-            <li>pixels</li>
-            <li>%</li>
-          </ul></td>
-        <td>设置图像的宽度。</td>
-        <td>STF</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <h2>标准属性</h2>
-    <pre>id, class, title, style, lang, xml:lang</pre>
-    如需完整的描述，请访问<a href="html_ref_standardattributes.html">标准属性</a>。
-  </div>
-  <div>
-    <h2>事件属性</h2>
-    <pre>onclick, ondblclick, onmousedown, onmouseup, onmouseover, 
-onmousemove, onmouseout, onkeypress, onkeydown, onkeyup
-</pre>
-    如需完整的描述，请访问<a href="html_ref_eventattributes.html">事件属性</a>。
-  </div>
-</div>
-
-<p class="copyright"></p></body>
+<pre><code class="hljs xml">
+&lt;img src="http://pic.58pic.com/58pic/15/24/50/43Q58PICkj4_1024.jpg"
+alt="" width="500px" height="300px;"&gt;
+</code></pre>
+<img src="http://pic.58pic.com/58pic/15/24/50/43Q58PICkj4_1024.jpg" alt="" width="500px" height="300px;">
+</body>
 </html>
