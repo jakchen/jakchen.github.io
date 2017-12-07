@@ -9,13 +9,15 @@ author: jakchen
 {:toc}
 
 ## 水平居中：
-
 ### 1.inline-block + text-align
 ```css
 inline-block + text-align
   子元素：inline-lock
   父元素：text-align:center;
 ```
+
+
+
 
 ### 2.table + margin
 ```css
