@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ajax测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+  <!--   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/marked/0.3.6/marked.js">
+    </script> -->
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/marked-2.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ditto.js"></script>
+  <script src="js/prism.js"></script>
+
+<!-- <script>
+function writemd(txt){
+        $('#content').html(marked(txt));
+}
+function writeSidebar(txt2){
+        $('#sidebar').html(marked(txt2));
+}
+function loadXMLDoc()
+{
+  var xmlhttp;
+  var siderhttp;
+  if (window.XMLHttpRequest)
+  {
+    //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+    xmlhttp=new XMLHttpRequest();
+    siderhttp=new XMLHttpRequest();
+  }
+  else
+  {
+    // IE6, IE5 浏览器执行代码
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    siderhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var txt = xmlhttp.responseText;
+      writemd(txt);
+
+    }
+  }
+  xmlhttp.open("GET","intro.md",true);
+  xmlhttp.send();
+
+  siderhttp.onreadystatechange=function()
+  {
+    if (siderhttp.readyState==4 && xmlhttp.status==200)
+    {
+      var txt2 = siderhttp.responseText;
+      writeSidebar(txt2);
+
+    }
+  }
+  siderhttp.open("GET","sidebar.md",true);
+  siderhttp.send();
+}
+loadXMLDoc();
+</script> -->
+</head>
+<body>
+<!-- <button id="btn" onclick="ajax('ajax.txt')">按钮</button> -->
+<!-- 左右边栏-->
+<div id="sidebar"></div>
+<div id="content"></div>
+<!-- 返回顶部-->
+<div id="back_to_top" style="display:block;">back to top</div>
+<!-- <div id="edit">edit</div> -->
+
+<div id="loading">Loading ...</div>
+<div id="error">Oops! ... File not found!</div>
+<!-- 上一涨&下一章 -->
+<div id="flip"><div id="pageup" style="display: inline-block;">上一章</div><div id="pagedown" style="display: inline-block;">下一章</div></div>
+<!-- 进度条 -->
+<div class="progress-indicator-2"></div>
+
+  <script src="js/config.js"></script>
+  <script>
+    ditto.run();
+  </script>
+</body>
+</html>

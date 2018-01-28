@@ -1,0 +1,37 @@
+# [PS学习笔记]()
+
+作者：[辰枫](http://jakchen.com)
+
+<!-- 授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a> -->
+
+## 目录
+1. [前言](#README)
+1. [设计过程](#docs/你掌握了吗)
+
+## 配色
+1. [配色总结](#docs/配色)
+1. [色轮](#docs/色轮)
+1. [颜色关系](#docs/颜色关系)
+1. [亮色和暗色](#docs/亮色和暗色)
+
+## 设计原则
+1. [设计原则总结](#docs/排版)
+1. [四大基本原则](#docs/四大基本原则)
+1. [亲密性](#docs/亲密性)
+1. [对齐](#docs/对齐)
+1. [重复](#docs/重复)
+1. [对比](#docs/对比)
+1. [4大基本原则复习](#docs/四大基本原则复习)
+1. [更多提示与技巧-未完成](#docs/更多提示与技巧)
+
+## 字体
+1. [字体总结](#docs/字体)
+1. [字体的基本规则](#docs/字体的基本规则)
+1. [字体与人生(协调-冲突-对比)](#docs/字体与人生)
+1. [字体类别](#docs/字体类别)
+1. [字体对比](#docs/字体对比)
+
+<!-- ## 其他
+- [源码](http://github.com/ruanyf/es6tutorial/)
+- [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
+- [反馈意见](https://github.com/ruanyf/es6tutorial/issues) -->
