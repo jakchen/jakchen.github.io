@@ -10,4 +10,4 @@ author: jakchen
 
 ## 写给大家看的设计书读书笔记
 
-[写给大家看的设计书读书笔记]({{ site.url }}/book)
+[写给大家看的设计书读书笔记](http://iqqfc.com/book)
