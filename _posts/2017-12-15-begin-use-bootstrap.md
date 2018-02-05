@@ -28,6 +28,33 @@ author: jakchen
 
 按下面步骤下面开始使用 Bootstrap。
 
+## bootstrap 媒体查询
+
+Bootstrap 是移动设备优先的，也就是说bootstrap的css优先匹配移动设备，然后才响应大屏幕设备。
+
+下面解释`xm`、`sm`、`md`、`lg`等缩写的含义。
+
+- xm：x-small，超小屏幕（手机，小于 768px）
+- sm：small，小屏幕（平板，大于等于 768px）
+- md：middle，中等屏幕（桌面显示器，大于等于 992px）
+- lg：large，大屏幕（大桌面显示器，大于等于 1200px）
+
+在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。
+
+```css
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: @screen-sm-min) { ... }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: @screen-md-min) { ... }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: @screen-lg-min) { ... }
+```
+
 ## 1.下载 Bootstrap
 
 下载 Bootstrap CSS、JavaScript 和字体的预编译的压缩版本。不包含文档和最初的源代码文件。
@@ -1179,31 +1206,4 @@ PS：内容应当放置于“列（column）”内，并且，只有“列（col
     left: auto;
   }
 }
-```
-
-## bootstrap 媒体查询
-
-Bootstrap 是移动设备优先的，也就是说bootstrap的css优先匹配移动设备，然后才响应大屏幕设备。
-
-下面解释`xm`、`sm`、`md`、`lg`等缩写的含义。
-
-- xm：x-small，超小屏幕（手机，小于 768px）
-- sm：small，小屏幕（平板，大于等于 768px）
-- md：middle，中等屏幕（桌面显示器，大于等于 992px）
-- lg：large，大屏幕（大桌面显示器，大于等于 1200px）
-
-在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。
-
-```css
-/* 超小屏幕（手机，小于 768px） */
-/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
-
-/* 小屏幕（平板，大于等于 768px） */
-@media (min-width: @screen-sm-min) { ... }
-
-/* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: @screen-md-min) { ... }
-
-/* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: @screen-lg-min) { ... }
 ```

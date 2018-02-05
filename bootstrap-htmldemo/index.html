@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--设置文档语言属性为简体中文-->
+<head>
+<meta charset="UTF-8">
+<!--声明字符编码-->
+<meta charset="utf-8">
+<!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Bootstrap demo</title>
+<meta name="author" content="这里是作者信息"/>
+<meta name="keywords" content="这里是页面关键词"/>
+<meta name="description" content="这里是页面描述"/>
+<meta http-equiv="Window-target" content="_top" />
+<!--防止别人在框架里调用你的页面-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--通知 IE 采用其所支持的最新的模式-->
+<meta name="robots" content="index,follow" />
+<meta name="renderer" content="webkit" />
+<!-- 页面需默认用极速核 -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<!-- 定义文章ico图标 -->
+<base target="iframe" />
+<!-- 定义页面所有链接都在新窗口打开 -->
+<!-- <script src="JS链接"></script> -->
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link href="demo/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--不需要指定 type 属性-->
+
+<!-- 代码高亮风格为 monokai-sublime-->
+  <link rel="stylesheet" href="style/monokai-sublime.css">
+  <!-- 给高亮代码添加行号的csss -->
+  <link rel="stylesheet" href="style/line-number.css">
+  <!-- 代码高亮核心：lighlight.js 。引入百度cdn的-->
+  <!-- <script src="scripts/highlight.pack.js"></script> -->
+  <script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <!-- 代码高亮还需引入下面这句 -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- 引入百度cdn的jquery -->
+  <!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+<style>
+*{margin: 0;padding: 0;}
+#wrap{background-color:#00C;margin: 0 auto;width: 960px;}
+html{
+  /*width: 200vw;*/
+}
+aside{
+  width: 17%;
+  margin-right: 5px;
+  z-index: 1;
+  position: absolute;/*脱离文档流*/
+  /*position: relative;仍在文档流*/
+}
+section,iframe{
+  width: 100%;
+  position: relative;
+  left: 17.5%;
+}
+aside,section,iframe{
+  border:1px solid #ccc;
+  float: left;
+  height: 100vh;
+}
+img{
+  max-width: 100%;
+}
+li a{
+  margin-right: 10px;
+  display: inline-block;
+  width: 70%;
+}
+#left li{
+  margin-bottom: 2px;
+}
+</style>
+</head>
+<body>
+<aside id="left">
+  <ul>
+    <h4>栅格系统</h4>
+    <li><a href="demo/1shangge.html">1.栅格系统</a></li>
+    <li><a href="demo/2lie-chongzhi.html">2.列重置</a></li>
+    <li><a href="demo/3lie-caozuo.html">3.列操作</a></li>
+    <h4>导航</h4>
+    <li><a href="demo/4daohang.html">1.标签式导航</a></li>
+    <li><a href="demo/5daohang.html">2.胶囊式导航</a></li>
+    <li><a href="demo/6daohang.html">导航两端对齐</a></li>
+    <li><a href="demo/7daohang.html">禁用链接</a></li>
+    <li><a href="demo/8daohang.html">下拉菜单</a></li>
+    <li><a href="demo/10daohang.html">动态标签</a></li>
+    <h4>导航栏</h4>
+    <li><a href="demo/11daohang.html">1.默认导航栏</a></li>
+    <li><a href="demo/12daohang.html">2.响应式导航栏</a></li>
+    <li><a href="demo/13daohang.html">导航栏中的表单</a></li>
+    <li><a href="demo/14daohang.html">导航栏中的按钮</a></li>
+    <li><a href="demo/15daohang.html">导航栏中的文本</a></li>
+    <li><a href="demo/16daohang.html">导航链接带图标</a></li>
+    <li><a href="demo/17daohang.html">组件对齐方式</a></li>
+    <li><a href="demo/18daohang.html">固定到顶部</a></li>
+    <li><a href="demo/19daohang.html">固定到底部</a></li>
+    <li><a href="demo/20daohang.html">静态的顶部</a></li>
+    <li><a href="demo/21daohang.html">反色导航栏</a></li>
+  </ul>
+</aside>
+<!-- <section id="window" name="window"></section> -->
+<iframe src="demo/1shangge.html" frameborder="0" name="iframe" id="iframeWindow"></iframe>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <pre class="pre-scrollable">
+          <code id="modalBody" class="hljs xml"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+<script src="demo/js/bootstrap.min.js"></script>
+
+<script>
+window.onload=function(){
+  var iframeWindow = document.getElementById("iframeWindow");
+  var iframeInnerHtml = getIframeContent();//获取iframe中文档内容
+  // console.log('iframe的innerHTML：'+iframeInnerHtml);
+
+  var aside = document.getElementById("left");
+  var arrLi = aside.getElementsByTagName("li");
+  for (var i = 0; i < arrLi.length; i++) {
+    var btn = createBtn();
+    arrLi[i].appendChild(btn);
+  }
+
+  showCode();
+
+  var arrBtn = aside.getElementsByTagName("button");
+  for (var i = 0; i < arrBtn.length; i++) {
+    arrBtn[i].onclick=showCode;
+  }
+
+  // console.log(modalBody.innerHTML);
+  function showCode(){ //模态框 显示 框架中的代码
+    var modalBody = document.getElementById("modalBody"); //获取pre
+    var txt = getIframeContent();//获取代码
+    var n = txt.replace(/</g,'&lt;');
+    var n2 = n.replace(/>/g,'&gt;');
+    /*
+    var n3 = n2.lastIndexOf('jQuery');//1384//返回从右向左出现某个字符或字符串的首个字符索引值（与indexOf相反）
+    var n4 = n2.substr(1338,262);//要截取掉的代码,从1338位开始，截取掉262个字符。
+    n2 = n2.replace(n4,'');
+    */
+    modalBody.innerHTML = n2;
+  }
+
+  function createBtn(){  //创建链接后面的按钮，用于打开显示html代码
+    var btn = document.createElement("button");
+    var txt = document.createTextNode("代码");
+    btn.appendChild(txt);
+    btn.className="btn btn-default btn-xs";
+    // btn.dataToggle="model";
+    btn.setAttribute("data-toggle", "modal");
+    btn.setAttribute("data-target", "#myModal");
+    // btn.setAttribute("onclick", "showCode()");
+    return btn;
+  }
+
+  function getIframeContent(){  //获取iframe中文档内容
+    var doc;
+    if (document.all){ // IE
+      doc = document.frames["iframeWindow"].document;
+    }else{ // 标准
+      doc = document.getElementById("iframeWindow").contentDocument;
+      }
+    return doc.body.innerHTML;
+  }
+
+}
+</script>
+</body>
+</html>
