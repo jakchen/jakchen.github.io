@@ -79,8 +79,8 @@ justify-content:flex-start;/*（默认值）：左对齐*/
   flex-start /*（默认值）：左对齐*/
   flex-end /*右对齐*/
   center /*居中*/
-  space-between /*两端对齐，项目之间的间隔都相等。*/
-  space-around /*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。*/
+  space-between /*会在子元素之间添加相同宽度的空白。两端对齐，项目之间的间隔都相等。*/
+  space-around /*在子元素两边各添加相同宽度的空白。每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。*/
 ```
 
 #### align-items
@@ -137,6 +137,10 @@ flex-basis:main-size|<width>
 
 #### flex简写属性
 ——该属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+
+- flex-grow（传给flex的第一个值）是相对于其他伸缩项，当前伸缩项在空间允许的情况下可以伸展的量。
+- flex-shrink是在空间不够的情况下，当前伸缩项相对于其他伸缩项可以收缩的量。
+- flex-basis（传给flex的最后一个值）是伸缩项伸缩的基准值。
 
 #### align-self
 ——设置单个flex item在cross-axis方向上对齐方式
