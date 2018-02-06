@@ -55,16 +55,17 @@ html{
   /*width: 200vw;*/
 }
 aside{
-  width: 17%;
+  width: 18%;
   margin-right: 5px;
   z-index: 1;
   position: absolute;/*脱离文档流*/
+  overflow-y: scroll;
   /*position: relative;仍在文档流*/
 }
 section,iframe{
   width: 100%;
   position: relative;
-  left: 17.5%;
+  left: 18.5%;
 }
 aside,section,iframe{
   border:1px solid #ccc;
@@ -87,6 +88,7 @@ li a{
 <body>
 <aside id="left">
   <ul>
+    <li><a href="demo/index.html">首页</a></li>
     <h4>栅格系统</h4>
     <li><a href="demo/1shangge.html">1.栅格系统</a></li>
     <li><a href="demo/2lie-chongzhi.html">2.列重置</a></li>
@@ -110,6 +112,10 @@ li a{
     <li><a href="demo/19daohang.html">固定到底部</a></li>
     <li><a href="demo/20daohang.html">静态的顶部</a></li>
     <li><a href="demo/21daohang.html">反色导航栏</a></li>
+    <h4>超大屏幕</h4>
+    <li><a href="demo/22Jumbotron.html">1.超大屏幕</a></li>
+    <h4>轮播</h4>
+    <li><a href="demo/23Carousel.html">轮播</a></li>
   </ul>
 </aside>
 <!-- <section id="window" name="window"></section> -->
