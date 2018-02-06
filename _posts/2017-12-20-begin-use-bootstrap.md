@@ -129,7 +129,7 @@ explicit JavaScript initialization of the same carousel.
 
 效果如下：<br>
 ![可选的标题]({{ site.url }}/assets/carousel.gif)
-
+![可选的标题](https://s1.ax1x.com/2018/02/06/9lIYTA.gif)
 
 `.carousel-caption`类的CSS代码如下：
 ```css
@@ -180,6 +180,7 @@ explicit JavaScript initialization of the same carousel.
 
 效果如下：<br>
 ![轮播（Carousel）导航 ]({{ site.url }}/assets/carousel.gif)
+![轮播（Carousel）导航 ](https://s1.ax1x.com/2018/02/06/9lIYTA.gif)
 
 ## 选项(data-*)
 
