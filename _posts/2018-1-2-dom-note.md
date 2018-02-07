@@ -8,7 +8,7 @@ author: jakchen
 * content
 {:toc}
 
-[点击查看 DOM 思维导图学习笔记]({{ site.url }}/assets/dom.png)
+[点击查看 DOM 思维导图学习笔记]({{ site.url }}/assets/DOM.png)
 
 DOM (document object model)文档对象模型，是把整个HTML文档，看做是一个节点模型，它定义了访问 HTML 和 XML 文档的标准。
 
