@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>jQuery属性过滤选择器</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-condensed">
+        <caption align="center">jQuery属性过滤选择器</caption>
+        <thead>
+          <tr>
+            <th>
+              选择器
+            </th>
+            <th>
+              描述
+            </th>
+            <th>
+              返回
+            </th>
+            <th>
+              示例
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>[attr]</strong></td>
+            <td>选取拥有此属性<br>的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[id]")</code>选取拥有属性id的元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>[attr=value]</strong></td>
+            <td>选取属性值为value的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title=test]")</code>选取属性title为"test"的&lt;div&gt;元素</td>
+          </tr>
+          <tr>
+            <td><strong>[attr!=value]</strong></td>
+            <td>选取属性值不等于value的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title!=test]")</code>选取属性title不等于"test"的&lt;div&gt;元素<br>注意：没有属性title的&lt;div&gt;元素也会被选取</td>
+          </tr>
+          <tr class="success">
+            <td><strong>[attr^=value]</strong></td>
+            <td>选取属性值以value开头的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title^=test]")</code>选取属性title以"test"开始的&lt;div&gt;元素</td>
+          </tr>
+          <tr>
+            <td><strong>[attr$=value]</strong></td>
+            <td>选取属性值以value结尾的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title$=test]")</code>选取属性title以"test"结束的&lt;div&gt;元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>[attr*=vlaue]</strong></td>
+            <td>选取属性值中含有value的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title*=test]")</code>选取属性title含有"test"的&lt;div&gt;元素</td>
+          </tr>
+          <tr>
+            <td><strong>[attr|=vlaue]</strong></td>
+            <td>选取属性等于给定字符串或以<br>该字符串为前缀(该字符串后跟一个连字符"-")的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title|='en']")</code>选取属性title等于en或以<br>en为前缀(该字符串后跟一个连字符"-")的元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>[attr~=vlaue]</strong></td>
+            <td>选取属性用空格分隔的值中包含一个给定值的元素</td>
+            <td>集合元素</td>
+            <td><code>$("div[title~='uk']")</code>选取属性title用空格分隔的值中<br>包含字符uk的元素</td>
+          </tr>
+          <tr>
+            <td><strong>[attr1][attr2]…<br>[attrN]</strong></td>
+            <td>用属性选择器合并成一个复合属性选择器，满足多个<br>条件。每选择一次，缩小一次范围</td>
+            <td>集合元素</td>
+            <td><code>$("div[id][title$='test']")</code>选取拥有属性id，并且属性title以<br>"test"结束的&lt;div&gt;元素</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

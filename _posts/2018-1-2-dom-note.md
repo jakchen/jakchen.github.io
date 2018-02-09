@@ -99,7 +99,20 @@ element.setAttribute(attributename,attributevalue)
 1. getElementById()
 2. getElementsByTagName()
 3. getElementsByClassName()
+4. getElementsByName()
 
+getElementsByName() 方法可返回带有指定名称的对象的集合。
+
+**语法：** `document.getElementsByName(name)`
+
+name:必须。元素的名称。
+
+```html
+<input name="x" type="radio" value="猫">
+<script>
+var x=document.getElementsByName("x");
+</script>
+```
 ![dom-fw]({{ site.url }}/assets/dom-fw.png)
 
 ## DOM 修改
