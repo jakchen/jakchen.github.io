@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>jQuery插入节点的方法</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-condensed">
+        <caption align="center">jQuery插入节点的方法</caption>
+        <thead>
+          <tr>
+            <th>
+              方法
+            </th>
+            <th>
+              描述
+            </th>
+            <th>
+              示例
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>append()</strong></td>
+            <td>向每个匹配的元素内部追加内容</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("p").append("&lt;b&gt;你好&lt;/b&gt;")</code>;<br>
+              结果：<code>&lt;p&gt;我想说：&lt;b&gt;你好&lt;/b&gt;&lt;/p&gt;</code></td>
+          </tr>
+          <tr class="success">
+            <td><strong>appendTo()</strong></td>
+            <td>将所有匹配的元素追加到指定的元素中。<br>实际上，使用该方法是颠倒了常规的$(A).append(B)<br>的操作，即不是将B追加到A中，而是将A追加到B中</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("&lt;b&gt;你好&lt;/b&gt;").appendTo("p")</code>;<br>
+              结果：<code>&lt;p&gt;我想说：&lt;b&gt;你好&lt;/b&gt;&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td><strong>prepend()</strong></td>
+            <td>向每个匹配的元素内部前置内容</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("p").prepend("&lt;b&gt;你好&lt;/b&gt;")</code>;<br>
+              结果：<code>&lt;p&gt;&lt;b&gt;你好&lt;/b&gt;我想说：&lt;/p&gt;</code></td>
+          </tr>
+          <tr class="success">
+            <td><strong>prependTo()</strong></td>
+            <td>将所有匹配的元素前置到指定的元素中。<br>实际上，使用该方法是颠倒了常规的$(A).prepend(B) <br>的操作，即不是将B前置到A中，而是将A前置到B中</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("&lt;b&gt;你好&lt;/b&gt;").prependTo("p")</code>;<br>
+              结果：<code>&lt;p&gt;&lt;b&gt;你好&lt;/b&gt;我想说：&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td><strong>after()</strong></td>
+            <td>在每个匹配的元索之后插入内容</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("p").after("&lt;b&gt;你好&lt;/b&gt;")</code>;<br>
+              结果：<code>&lt;p&gt;我想说：&lt;/p&gt;&lt;b&gt;你好&lt;/b&gt;</code></td>
+          </tr>
+          <tr class="success">
+            <td><strong>insertAfter()</strong></td>
+            <td>将所有匹配的元素插入到指定元素的后面。<br>实际上，使用该方法是颠倒了常规的$(A).after(B) <br>的操作，即不是将B插入到A后面，而是将A插入到B后面</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("&lt;b&gt;你好&lt;/b&gt;").insertAfter("p")</code>;<br>
+              结果：<code>&lt;p&gt;我想说：&lt;/p&gt;&lt;b&gt;你好&lt;/b&gt;</code></td>
+          </tr>
+          <tr>
+            <td><strong>before()</strong></td>
+            <td>在每个匹配的元素之前插入内容</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("p").before("&lt;b&gt;你好&lt;/b&gt;")</code>;<br>
+              结果：<code>&lt;b&gt;你好&lt;/b&gt;&lt;p&gt;我想说：&lt;/p&gt;</code></td>
+          </tr>
+          <tr class="success">
+            <td><strong>insertBefore()</strong></td>
+            <td>将所有匹配的元素捅入到指定的元素的前面。<br>实际上，使用该方法是颠倒了常规的$(A).before(B) <br>的操作，即不是将B插入到A前面，而是将A插入到B前面</td>
+            <td>HTML代码：<code>&lt;p&gt;我想说：&lt;/p&gt;</code><br>
+              jQuery代码：<code>$("&lt;b&gt;你好&lt;/b&gt;").insertBefore("p")</code>;<br>
+              结果：<code>&lt;b&gt;你好&lt;/b&gt;&lt;p&gt;我想说：&lt;/p&gt;</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

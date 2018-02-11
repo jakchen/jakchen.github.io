@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>jQuery表单对象属性过滤选择器</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-condensed">
+        <caption align="center">jQuery表单对象属性过滤选择器</caption>
+        <thead>
+          <tr>
+            <th>
+              选择器
+            </th>
+            <th>
+              描述
+            </th>
+            <th>
+              返回
+            </th>
+            <th>
+              示例
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>:enabled</strong></td>
+            <td>选取所有可用元素</td>
+            <td>集合元素</td>
+            <td><code>$("#form1 :enabled")</code>；选取id为"form1"的表单内的所有可用元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:disabled</strong></td>
+            <td>选取所有不可用元素</td>
+            <td>集合元素</td>
+            <td><code>$("#form2 :disabled")</code>；选取id为"form2"的表单内的所有不可用元素</td>
+          </tr>
+          <tr>
+            <td><strong>:checked</strong></td>
+            <td>选取所有被选中的元素(单选框，复选框)</td>
+            <td>集合元素</td>
+            <td><code>$("input:checked")</code>；选取所有被选中的&lt;input&gt;元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:selected</strong></td>
+            <td>选取所有被选中的选项元素(下拉列表)</td>
+            <td>集合元素</td>
+            <td><code>$("select option:selected")</code>；选取所有被选中的选项元素</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

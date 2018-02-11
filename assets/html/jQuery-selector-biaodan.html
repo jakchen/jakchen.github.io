@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>jQuery表单选择器</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-condensed">
+        <caption align="center">jQuery表单选择器</caption>
+        <thead>
+          <tr>
+            <th>
+              选择器
+            </th>
+            <th>
+              描述
+            </th>
+            <th>
+              返回
+            </th>
+            <th>
+              示例
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>:input</strong></td>
+            <td>选取所有&lt;input&gt;, &lt;textarea&gt;,<br>&lt;select&gt;, &lt;button&gt;元素</td>
+            <td>集合元素</td>
+            <td><code>$(":input")</code>选取所有&lt;input&gt;、 &lt;textarea&gt;、&lt;select&gt;和&lt;button&gt;元素</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:text</strong></td>
+            <td>选取所有单行文本框</td>
+            <td>集合元素</td>
+            <td><code>$(":text")</code>选取所有的单行文本框</td>
+          </tr>
+          <tr>
+            <td><strong>:password</strong></td>
+            <td>选取所有的密码框</td>
+            <td>集合元素</td>
+            <td><code>$(":password")</code>选取所有的密码框</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:radio</strong></td>
+            <td>选取所有的单选框</td>
+            <td>集合元素</td>
+            <td><code>$(":radio")</code>选取所有的单选框</td>
+          </tr>
+          <tr>
+            <td><strong>:checkbox</strong></td>
+            <td>选取所有的多选框</td>
+            <td>集合元素</td>
+            <td><code>$(":checkbox")</code>选取所有的复选框</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:submit</strong></strong></td>
+            <td>选取所有的提交按钮</td>
+            <td>集合元素</td>
+            <td><code>$(":submit")</code>选取所有的提交按钮</td>
+          </tr>
+          <tr>
+            <td><strong>:image</strong></td>
+            <td>选取所有的图像按钮</td>
+            <td>集合元素</td>
+            <td><code>$(":image")</code>选取所有的图像按钮</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:reset</strong></strong></td>
+            <td>选取所有的重置按钮</td>
+            <td>集合元素</td>
+            <td><code>$(":reset")</code>选取所有的重置按钮</td>
+          </tr>
+          <tr>
+            <td><strong>:button</strong></td>
+            <td>选取所有的按钮</td>
+            <td>集合元素</td>
+            <td><code>$(":button")</code>选取所有的按钮</td>
+          </tr>
+          <tr class="success">
+            <td><strong>:file</strong></td>
+            <td>选取所有的上传域</td>
+            <td>集合元素</td>
+            <td><code>$(":file")</code>选取所有的上传域</td>
+          </tr>
+          <tr>
+            <td><strong>:hidden</strong></td>
+            <td>选取所有的不可见元素</td>
+            <td>集合元素</td>
+            <td><code>$(":hidden")</code>选取所有的不可见元素</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

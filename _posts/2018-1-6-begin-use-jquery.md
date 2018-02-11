@@ -17,7 +17,7 @@ jQuery的选择器完全继承了CSS的风格，只是CSS选择器是找到元�
 
 学会使用选择器是学习jQuery的基础，jQuery的行为规则都必须在获取到元素后才能生效。
 
-PS：目前学到的除了(document)之外，所有的(“body/#id/.class等”)中都必须有引号。
+PS：目前学到的除了(document)之外，所有的("body/#id/.class等")中都必须有引号。
 
 ### 例子
 
@@ -115,12 +115,12 @@ if($("tt")[0]){
 3. **相邻元素**
 4. **同辈元素**等。
 
-- `$(“div span”)`：选取&lt;div&gt;里的所有的&lt;span&gt;元素（后代元素）；
-- `$(“div>span”)`：选取紧接在&lt;div&gt;元素下元素名是&lt;span&gt;的子元素；（注意：子元素和后代元素的区别）
-- `$(‘.one+div’)`：选取class为one的下一个&lt;div&gt;同辈元素；或者`$(“.one”).next(“div”)`; (推荐使用)
-- `$(‘#two~div’)`：选取id为two的元素后面的所有&lt;div&gt;兄弟元素。或者`$(“#prev”).nextAll(“div”)`;(推荐使用)
+- `$("div span")`：选取&lt;div&gt;里的所有的&lt;span&gt;元素（后代元素）；
+- `$("div>span")`：选取紧接在&lt;div&gt;元素下元素名是&lt;span&gt;的子元素；（注意：子元素和后代元素的区别）
+- `$('.one+div')`：选取class为one的下一个&lt;div&gt;同辈元素；或者`$(".one").next("div")`; (推荐使用)
+- `$('#two~div')`：选取id为two的元素后面的所有&lt;div&gt;兄弟元素。或者`$("#prev").nextAll("div")`;(推荐使用)
 
-`$(“#prev”).siblings(“div”)：`：所有同辈元素（不管是id为#prev元素前面还是后面的同辈元素，都会被选取）
+`$("#prev").siblings("div")：`：所有同辈元素（不管是id为#prev元素前面还是后面的同辈元素，都会被选取）
 
 ## 3.过滤选择器
 
@@ -153,8 +153,94 @@ if($("tt")[0]){
 <iframe src="{{ site.url }}/assets/html/jQuery-selector-shuxing-guolv.html" frameborder="0" width="100%" height="710px;"></iframe>
 
 ### 子元素过滤
+
+子元素过滤选择器的过滤规则相对于其他的选择器稍微有些复杂，不过只要将元素的父元素和子元素区分清楚，使用起来页非常简单。
+
+另外还要注意它与普通的过滤选择器的区别。
+
+<iframe src="{{ site.url }}/assets/html/jQuery-selector-ziyuansu-guolv.html" frameborder="0" width="100%" height="595px;"></iframe>
+
+`:nth-child()`选择器是很常用的子元素过滤选择器，详细功能如下：
+
+1. `:nth-child(even)`能选取每个父元素下的索引值是偶数(第2、4、6、8……个)的元素。
+2. `:nth-child(odd)`能选取每个父元素下的索引值是奇数(第1、3、5、7……个)的元素。
+3. `:nth-child(2)`能选取每个父元素下的索引值等于2的元素。
+4. `:nth-child(3n)`能选取每个父元素下的索引值是3的倍数的元素。(n从1开始)
+5. `:nth-child(3n+1)`能选取每个父元素下的索引值是(3n+1)的元素。(n从1开始)
+
 ### 表单对象属性过滤
 
+此选择器注意是对所选择的表单元素进行过滤，例如选择被选中的下拉框，多选框等元素。
+
+<iframe src="{{ site.url }}/assets/html/jQuery-selector-biaodanshuxing-guolv.html" frameborder="0" width="100%" height="295px;"></iframe>
 
 ## 4.表单选择器。
+
+为了使用户能够更加灵活地操作表单，jQuery中专门加入了表单选择器。利用这个选择器，能够极其方便地获取到表单的某个或某类型的元素。
+
+<iframe src="{{ site.url }}/assets/html/jQuery-selector-biaodan.html" frameborder="0" width="100%" height="690px;"></iframe>
+
+## 选择器中的一些注意事项
+
+### 选择器中含有特殊符号：
+
+- 选择器中含有"."、"#"、"("或"]"等特殊字符。
+
+根据W3C的规定，属性值中是不能含有这些特殊字符的。但在实际项目中偶尔会遇到表达式中含有"#"和"."等特殊字符。如果按照普通的方式去处理出来的话就会出错。解决此类错误的方法是使用转义符转义。
+
+HTML代码如下：
+```html
+<div id="id#b">bb</div>
+<div id="id[1]">cc</div>
+```
+
+如果按照普通的方式来获取，例如：
+```javascript
+$("#id#b");
+$("#id[1]")
+```
+
+以上代码不能正确获取到元素，正确的写法如下：
+```javascript
+$("#id\\#b");      //转移特殊字符#
+$("#id\\[1\\]")    //转移特殊字符[]
+```
+
+### 选择器中含有空格
+
+- 选择器中含有空格的注意事项：
+
+选择器中的空格也是不容忽视的，多一个空格或少一个空格也许会得到截然不同的结果。
+
+**之所以会出现不同的结果，是因为后代选择器与过滤选择器的不同。**
+
+例如：
+```javascript
+var $t_a=$('.test :hidden');    //带空格的jQuery选择器
+```
+
+以上代码是选取class为"test"的元素里面的隐藏元素
+
+```javascript
+var $t_b=$('.test:hidden');    //不带空格的jQuery选择器
+```
+
+以上代码是隐藏的class为"test"的元素
+
+**一些方法：**
+ps：例子省略。
+
+- `show()`:显示隐藏的匹配元素
+- `css(name,value)`:给元素设置样式
+- `text(String)`:设置匹配元素的文本内容
+- `filter(expr)`:筛选出与指定表达式匹配的元素集合，其中expr可以是多个选择器的组合，注意区分它和find()方法。find()会在元素内寻找匹配元素，而filter()则是筛选元素。一个是对他的·子集操作，一个是对自身集合元素进行筛选
+- `addClass(class)`:未匹配的元素添加指定的类名
+
+## 小结
+
+选择器是行为与文档内容之间连接的纽带，选择器的最终目的就是能够轻松地找到文档中的元素。
+
+
+
+
 
