@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让 IE 浏览器运行最新的渲染模式下。Bootstrap 不支持 IE 古老的兼容模式。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>parent()，parents()和closest()的区别</title>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-condensed">
+        <caption align="center">parent()，parents()和closest()的区别</caption>
+        <thead>
+          <tr>
+            <th>
+              方法
+            </th>
+            <th>
+              描述
+            </th>
+            <th>
+              示例
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>parent()</strong></td>
+            <td>获得集合中每个匹配元素的父级元素</td>
+            <td><code>$('.item-1').parent().css('background','red')</code>;<br><code>parent()</code>方法从指定类型的直接父节点开始查找。<br><code>parent()</code>返回一个元素节点</code></td>
+          </tr>
+          <tr class="success">
+            <td><strong>parents()</strong></td>
+            <td>获得集合中每个匹配元素的祖先元素</td>
+            <td><code>$('.item-1').parents().css('background','red')</code>;<br><code>parents()</code>方法查找方式同<code>parent()</code>方法类似，不同的一点在于，<br>当它找到第一个父节点时并没有停止查找，而是继续查找，最后返回多个父节点</td>
+          </tr>
+          <tr>
+            <td><strong>closest</strong></td>
+            <td>从元素本身开始，逐渐向上级元素匹配，<br>并返回最先匹配的祖先元素</td>
+            <td><code>$('.item-1').closest('ul').css('background','red')</code>;<br><code>closest()</code>方法查找是从包含自身的节点找起，它同<code>parents()</code>方法类似，<br>不同点就在于它只返回匹配的第一个元素节点</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- (下面)包括所有已编译的插件，或者根据需要包含单个文件。 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
