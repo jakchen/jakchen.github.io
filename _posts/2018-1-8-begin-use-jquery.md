@@ -235,7 +235,7 @@ jQuery 有两个合成事件——`hover()` 方法和 `toggle()` 方法，类似
 
 语法结构为：
 ```javascript
-hover(enter,leave)。
+hover(enter,leave);
 ```
 
 - 用于模拟光标悬停事件。当光标移动到目标元素上时，会触发指定的第1个函数(enter);当光标移出这个元素时，会触发指定的第2个函数(leave)。
@@ -572,7 +572,7 @@ $(function(){
 
 ### 5.event.relatedTarget
 
-方法在标准 DOM 中，mouseover 和 mouseout 所发生的元素可以通过 `event.target` 来访问，相关元素是通过 `event.relatedTarget` 来访问的。
+在标准 DOM 中，mouseover 和 mouseout 所发生的元素可以通过 `event.target` 来访问，相关元素是通过 `event.relatedTarget` 来访问的。
 
 `event.relatedTarget` 在 mouseover 中相当于 IE 浏览器的 `event.fromElement()` ，在 mouseout 中相当于 IE 浏览器的 `event.toElement` ，jQuery 对其进行了封装，使之能兼容各种浏览器。
 
@@ -598,7 +598,7 @@ $(function(){
 - 比如，获取鼠标的左、中、右键：
 ```javascript
 $("a").mousedown(function(e){
-    alert(e.which)  // 1 = 鼠标左键 left; 2 = 鼠标中键; 3 = 鼠标右键
+    alert(e.which)  // 1 = 鼠标左键; 2 = 鼠标中键; 3 = 鼠标右键
     return false;//阻止链接跳转
 })
 ```
@@ -730,7 +730,7 @@ $(function(){
 
 使用 `one()` 方法为 &lt;button&gt; 元素绑定单击事件后，只在用户第 1 次单击按钮时，处理函数才执行，之后的单击就不会再起作用。
 
-**注意：**jQuery 1.7新增了 `on()` ,`off()` ,`delegate()` 和`undelegate()` 事件绑定。具体介绍参考《锋利的jQuery(第2版)。
+**注意：**jQuery 1.7新增了 `on()` ,`off()` ,`delegate()` 和`undelegate()` 事件绑定。具体介绍参考《锋利的jQuery(第2版)》第十章。
 
 ## 7.模拟操作
 
@@ -758,8 +758,7 @@ $('#btn').click();
 
 例如为元素绑定一个 “myClick” 的事件，jQuery 代码如下：
 ```javascript
-$(function(){
- $('#btn').bind("myClick", function(){
+$('#btn').bind("myClick", function(){
   $('#test').append("<p>我的自定义事件.</p>");
 });
 ```
@@ -783,14 +782,12 @@ $('#btn').trigger("myClick");
 
 下面是一个传递数据的例子。
 ```javascript
-$(function(){
- $('#btn').bind("myClick", function(event, message1, message2){ //获取数据
+$('#btn').bind("myClick", function(event, message1, message2){ //获取数据
   $('#test').append( "<p>"+message1 + message2 +"</p>");
 });
- $('#btn').click(function(){
+$('#btn').click(function(){
   $(this).trigger("myClick",["我的自定义","事件"]);
- }).trigger("myClick",["我的自定义","事件"]);
-})
+}).trigger("myClick",["我的自定义","事件"]);
 ```
 
 ### 4.执行默认操作

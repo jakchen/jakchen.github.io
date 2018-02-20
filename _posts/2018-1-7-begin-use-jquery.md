@@ -198,7 +198,7 @@ jQuery 提供的插入节点的方法：
 
 ### remove()
 
-作用是从 DOM 中删除所有匹配的鳄鱼神，传入的参数拥有根据 jQuery 表达式来筛选元素。
+作用是从 DOM 中删除所有匹配的元素，传入的参数用于根据 jQuery 表达式来筛选元素。
 
 例如：
 ```javascript
@@ -783,7 +783,7 @@ $(document).bind("click", function (e) {
 
 `parent()` , `parents()` 与 `closest()`方法两两之间有类似又有不同，在此简短的区分一下这三个方法，如下所示。可以根据实际需求灵活地选中使用哪个方法。
 
-<iframe src="{{ site.url }}/assets/html/jQuery-parent-parents-closest.html" frameborder="0" width="100%" height="315·px;"></iframe>
+<iframe src="{{ site.url }}/assets/html/jQuery-parent-parents-closest.html" frameborder="0" width="100%" height="445px;"></iframe>
 
 除此之外，在 jQuery 中还有很多遍历节点的方法，例如 `find()` 、 `filter()` 、 `nextAll` 和 `prevAll()` 等。可以查看《锋利的jQuery(第2版)》附录的 jQuery 速查表文档。[在线的jQuery 速查表文档](http://hemin.cn/jq/ '在线的jQuery 速查表文档')
 
@@ -868,7 +868,7 @@ var left = offset.left;       //获取左偏移
 var top =  offset.top;        //获取上偏移
 ```
 
-### position()方法
+#### 2.position()方法
 
 它的作用是获取元素相对于最近的一个 position 元素属性设置为 relative 或者 absolute 的祖父节点的相对偏移，与 `offset()` 一样，它返回的对象也包括两个属性，即 top 和 left 。jQuery 代码如下：
 ```javascript
@@ -877,15 +877,15 @@ var left = position.left;       //获取左偏移
 var top =  position.top;        //获取上偏移
 ```
 
-### 3.scrollTop()和scrollLeft()方法
+#### 3.scrollTop()和scrollLeft()方法
 
 - 这两个方法的作用分别是获取元素的滚动条距顶端的距离和距左侧的距离。
 
 例如使用下面的代码获取 &lt;p&gt; 元素的滚动条距离：
 ```javascript
 var $p = $("p");
-var scrollTop = $p.scrollTop;       //获取元素的滚动条距顶端的距离
-var scrollLeft =  $p.scrollLeft;     //获取元素的滚动条距左侧的距离
+var scrollTop = $p.scrollTop();       //获取元素的滚动条距顶端的距离
+var scrollLeft =  $p.scrollLeft();     //获取元素的滚动条距左侧的距离
 ```
 
 - 另外，可以为这两个方法指定一个参数，控制元素的滚动条滚动到指定位置。
@@ -893,8 +893,94 @@ var scrollLeft =  $p.scrollLeft;     //获取元素的滚动条距左侧的距�
 例如使用如下代码控制元素内的滚动条滚动到距顶端300和距左侧300的位置：
 ```javascript
 $("textarea").scrollTop(300); //元素的垂直滚动条滚动到指定的位置
-$("textarea").scrollLeft(300);  //元素的垂直滚动条滚动到指定的位置
+$("textarea").scrollLeft(300);  //元素的横向滚动条滚动到指定的位置
 ```
+
+## 代码实例
+
+巩固 jQuery 中的 DOM 操作。
+
+- 超链接提示效果
+
+HTML 代码如下：
+```html
+<p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1.</a></p>
+<p><a href="#" class="tooltip" title="这是我的超链接提示2.">提示2.</a></p>
+<p><a href="#" title="这是自带提示1.">自带提示1.</a></p>
+<p><a href="#" title="这是自带提示2.">自带提示2.</a> </p>
+```
+
+JavaScript代码如下：
+```javascript
+$(function(){
+  var x = 10; //防止自制的提示与鼠标的距离太近
+  var y = 20;
+  $("a.tooltip").mouseover(function(e){ //鼠标悬停事件
+    this.myTitle = this.title;  //获取链接原有title
+    this.title = "";  //清空链接原有title，阻止title默认样式显示
+    var tooltip = "<div id='tooltip'>"+ this.myTitle +"<\/div>"; //创建 div 元素
+    $("body").append(tooltip);  //把它追加到文档中
+    $("#tooltip") //设置追加的div的CSS定位
+      .css({
+        "top": (e.pageY+y) + "px",  //pageY:显示鼠标指针的Y坐标位置
+        "left": (e.pageX+x)  + "px"
+      }).show("fast");    //设置x坐标和y坐标，并且显示
+    }).mouseout(function(){ //鼠标移出事件
+    this.title = this.myTitle;  //还原链接原有title
+    $("#tooltip").remove();   //移除追加的div
+    }).mousemove(function(e){ //鼠标悬停并移动事件，提示效果跟着鼠标一起移动
+    $("#tooltip")
+      .css({
+        "top": (e.pageY+y) + "px",
+        "left": (e.pageX+x)  + "px"
+      });
+  });
+})
+```
+
+- 图片提示效果
+
+稍微修改上面链接提示效果代码，就可以做出一个图片的提示效果。
+
+HTML 代码如下：
+```html
+<ul>
+  <li><a href="images/apple_1_bigger.jpg" class="tooltip" title="苹果 iPod"><img src="images/apple_1.jpg" alt="苹果 iPod" /></a></li>
+  <li><a href="images/apple_2_bigger.jpg" class="tooltip" title="苹果 iPod nano"><img src="images/apple_2.jpg" alt="苹果 iPod nano"/></a></li>
+  <li><a href="images/apple_3_bigger.jpg" class="tooltip" title="苹果 iPhone"><img src="images/apple_3.jpg" alt="苹果 iPhone"/></a></li>
+  <li><a href="images/apple_4_bigger.jpg" class="tooltip" title="苹果 Mac"><img src="images/apple_4.jpg" alt="苹果 Mac"/></a></li>
+</ul>
+```
+
+jQuery 代码如下：
+```javascript
+$(function(){
+  var x = 10;
+  var y = 20;
+  $("a.tooltip").mouseover(function(e){
+    this.myTitle = this.title;
+    this.title = "";
+    var imgTitle = this.myTitle? "<br/>" + this.myTitle : "";
+    var tooltip = "<div id='tooltip'><img src='"+ this.href +"' alt='产品预览图'/>"+imgTitle+"<\/div>"; //创建 div 元素
+    $("body").append(tooltip);  //把它追加到文档中
+    $("#tooltip")
+      .css({
+        "top": (e.pageY+y) + "px",
+        "left":  (e.pageX+x)  + "px"
+      }).show("fast");    //设置x坐标和y坐标，并且显示
+    }).mouseout(function(){
+    this.title = this.myTitle;
+    $("#tooltip").remove();  //移除
+    }).mousemove(function(e){
+    $("#tooltip")
+      .css({
+        "top": (e.pageY+y) + "px",
+        "left":  (e.pageX+x)  + "px"
+      });
+  });
+})
+```
+
 
 
 

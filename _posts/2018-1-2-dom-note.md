@@ -21,6 +21,8 @@ W3C DOM 标准被分为 3 个不同的部分：
 - XML DOM - 针对 XML 文档的标准模型
 - HTML DOM - 针对 HTML 文档的标准模型
 
+[点击查看 DOM 操作分类详细介绍]({{ site.url }}/2018/01/07/begin-use-jquery/#dom操作分类)
+
 HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的方法。
 
 换言之，HTML DOM 是关于如何获取、修改、添加或删除 HTML 元素的标准。
