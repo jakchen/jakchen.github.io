@@ -68,7 +68,7 @@ function initialize() {
 
 function init_sidebar_section() {
     // $.get(ditto.sidebar_file, function (data) {
-    $.get("http://iqqfc.com/book/sidebar.txt", function (data) {
+    $.get("https://jakchen.github.io/book/sidebar.txt", function (data) {
         $(ditto.sidebar_id).html(marked(data));
 
         if (ditto.search_bar) {
